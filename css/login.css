@@ -1,0 +1,128 @@
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-family: MicrosoftYaHei;
+	color: #000D51;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.panel-body {
+	border: none !important;
+	color: #000D51 !important;
+}
+
+.logo {
+	background-image: url(../img/topImg.png);
+	background-repeat: no-repeat;
+	background-size: 40% 100%;
+	border: none !important;
+}
+
+.layout-panel-north {
+	height: 8% !important;
+	padding: 1%;
+}
+
+.login-center {
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	background: url(../img/car.jpg) no-repeat;
+	background-repeat: no-repeat;
+	background-position: 100% 0;
+	background-size: cover;
+}
+
+.login-panel {
+	width: 32%;
+	height: 88.7%;
+	margin-right: 2%;
+	background: rgba(255, 255, 255, .74);
+	border-radius: 0.5rem;
+}
+
+.login-panel h3 {
+	margin: 8% 0;
+	font-weight: 400;
+	font-size: 2.75rem;
+	letter-spacing: -0.05rem;
+	text-align: center;
+	opacity: 1;
+}
+
+.form-container {
+	height: 80%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.lable {
+	flex: 1.1;
+	font-size: 2.13rem;
+	letter-spacing: -0.04rem;
+}
+
+.form-right {
+	flex: 2;
+}
+
+form {
+	height: 90% !important;
+	width: 80% !important;
+	display: flex !important;
+	flex-direction: column;
+}
+
+table {
+	height: 80% !important;
+	display: flex !important;
+	flex-direction: column;
+}
+
+.row {
+	display: flex;
+	flex: 1 !important;
+	width: 100%;
+	margin-bottom: 5%;
+}
+
+.textbox {
+	width: 100% !important;
+	height: 100%;
+	border: 2px solid #383735 !important;
+	border-radius: 0.75rem !important;
+	opacity: 0.6;
+}
+
+.combo-arrow {
+	background: url(../img/Group 10 Copy 4@2x.png);
+	background-color: #FFFFFF !important;
+}
+
+.easyui-linkbutton {
+	height: 12% !important;
+	width: 100%;
+	background: #759AD5 !important;
+	box-shadow: 2px 2px 2px 0 #000D51;
+	border-radius: 7px;
+}
+
+.l-btn-text {
+	height: 100%;
+	line-height: 2.5rem !important;
+	font-size: 1.75rem !important;
+	font-weight: bold;
+	color: #FFFFFF;
+	letter-spacing: -0.04rem;
+}
+
+.layout-panel-south {
+	height: 8% !important;
+	padding: 1%;
+}

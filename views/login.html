@@ -4,20 +4,57 @@
 	<head>
 		<meta charset="UTF-8">
 		<link rel="stylesheet" href="../css/login.css" />
-		<link href="../scripts/easyUI/themes/default/easyui.css" rel="stylesheet" />
-		<link href="../scripts/easyUI/themes/icon.css" rel="stylesheet" />
-		<script src="../scripts/jquery.min.js"></script>
-		<script src="../scripts/jquery.easyui.min.js"></script>
+		<link href="../jquery-easyui-1.5.5.2/themes/default/easyui.css" rel="stylesheet" />
+		<link href="../jquery-easyui-1.5.5.2/themes/icon.css" rel="stylesheet" />
+		<link href="../jquery-easyui-1.5.5.2/demo/demo.css" />
+		<script src="../jquery-easyui-1.5.5.2/jquery.min.js"></script>
+		<script src="../jquery-easyui-1.5.5.2/jquery.easyui.min.js"></script>
 		<title>用户登录</title>
 	</head>
 
-	<body>
-		<header>
-			<img src="../img/株洲所中英文左右组合（横）.jpg" />
-		</header>
-		<section class="login-center">
-			
-		</section>
+	<body class="easyui-layout">
+    <div data-options="region:'north'" class="logo" >
+    </div>
+    </div>
+	<div data-options="region:'center'" class="login-center">
+			<div class="login-panel">
+				<h3>欢迎登陆</h3>
+				<div class="form-container">
+					<form>
+						<table>
+							<tr class="row">
+								<td class="lable">产线编号 :</td>
+								<td class="form-right">
+									<select class="easyui-combobox select" id="LINEID" name="LINEID" editable="false"></select>
+								</td>
+							</tr>
+							<tr class="row">
+								<td class="lable">登录方式 :</td>
+								<td class="form-right">
+									<select class="easyui-combobox select" id="LOGINTYPE" name="LOGINTYPE" editable="false" data-options="valueField:'id',textField:'value'"></select>
+								</td>
+							</tr>
+							<tr class="row">
+								<td class="lable">工站编号 :</td>
+								<td class="form-right">
+									<input class="easyui-textbox" type="text" name="STATIONID"></input>
+								</td>
+							</tr>
+							<tr class="row">
+								<td class="lable">用户编号 :</td>
+								<td class="form-right">
+									<input class="easyui-textbox" type="text" name="USERID"></input>
+								</td>
+							</tr>
+						</table>
+						<a href="javascript:void(0)" class="easyui-linkbutton button" onclick="submitForm()">登录</a>
+					</form>
+					
+				</div>
+			</div>
+		</div>
+		<div data-options="region:'south'">
+		</div>
 	</body>
 
 </html>
