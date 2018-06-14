@@ -36,6 +36,7 @@ body {
 	background-repeat: no-repeat;
 	background-position: 100% 0;
 	background-size: cover;
+	/*	 filter:Alpha(opacity=50);*/
 }
 
 .login-panel {
@@ -44,6 +45,18 @@ body {
 	margin-right: 2%;
 	background: rgba(255, 255, 255, .74);
 	border-radius: 0.5rem;
+	position: relative;
+}
+
+.title-bg {}
+
+.icon {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	width: 12%;
+	height: 12%;
+	background: url(../img/IT运维故障.png) repeat center center;
 }
 
 .login-panel h3 {
@@ -52,7 +65,6 @@ body {
 	font-size: 2.75rem;
 	letter-spacing: -0.05rem;
 	text-align: center;
-	opacity: 1;
 }
 
 .form-container {
@@ -62,47 +74,90 @@ body {
 	align-items: center;
 }
 
-.lable {
-	flex: 1.1;
-	font-size: 2.13rem;
-	letter-spacing: -0.04rem;
+.page-container {
+	width: 100%;
+	height: 15%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+input {
+	color: #000D51;
+	font-size: 1.5rem !important;
+}
+
+form {
+	width: 80% !important;
+	height: 80% !important;
+	display: flex !important;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+label {
+	width: 25%;
+	font-size: 183%;
 }
 
 .form-right {
 	flex: 2;
 }
 
-form {
-	height: 90% !important;
-	width: 80% !important;
-	display: flex !important;
-	flex-direction: column;
-}
-
-table {
-	height: 80% !important;
-	display: flex !important;
-	flex-direction: column;
-}
-
-.row {
-	display: flex;
-	flex: 1 !important;
-	width: 100%;
-	margin-bottom: 5%;
-}
-
 .textbox {
-	width: 100% !important;
-	height: 100%;
+	font-size: 100% !important;
+	color: #000D51 !important;
+	width: 80% !important;
+	background-color: rgba(255, 255, 255, .4) !important;
+}
+
+.combo {
+	width: 65% !important;
+	height: 75%;
 	border: 2px solid #383735 !important;
-	border-radius: 0.75rem !important;
-	opacity: 0.6;
+	border-radius: 1.13rem !important;
+}
+
+.combobox-item {
+	font-size: 1.2rem !important;
+}
+
+.combobox-item-selected {
+	background-color: rgba(0, 13, 81, .8) !important;
+	color: #FFFFFF !important;
+}
+
+.textbox-addon {
+	height: 100% !important;
+	background-color: rgba(255, 255, 255, .4) !important;
 }
 
 .combo-arrow {
-	background: url(../img/Group 10 Copy 4@2x.png);
-	background-color: #FFFFFF !important;
+	background: url(../img/select.png) no-repeat center center !important;
+	background-size: 60% 60% !important;
+	height: 100% !important;
+}
+
+.easyui-input {
+	width: 65% !important;
+	height: 75%;
+	border: 1px solid #383735;
+	border-radius: 7px;
+	background: rgba(255, 255, 255, .4);
+}
+
+#_easyui_textbox_input1,
+#_easyui_textbox_input2 {
+	height: 100% !important;
+	width: 100% !important;
+	background-color: rgba(255, 255, 255, .4) !important;
+}
+
+.info {
+	font-size: larger;
+	align-self: flex-end;
+	font-weight: bold;
 }
 
 .easyui-linkbutton {
@@ -110,12 +165,12 @@ table {
 	width: 100%;
 	background: #759AD5 !important;
 	box-shadow: 2px 2px 2px 0 #000D51;
-	border-radius: 7px;
+	border-radius: 0.4rem;
 }
 
 .l-btn-text {
 	height: 100%;
-	line-height: 2.5rem !important;
+	line-height: 2.75rem !important;
 	font-size: 1.75rem !important;
 	font-weight: bold;
 	color: #FFFFFF;
