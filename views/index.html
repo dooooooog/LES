@@ -4,6 +4,7 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<title>demo</title>
+		<link rel="stylesheet" href="../css/all.css" />
 		<link rel="stylesheet" href="../jquery-easyui-1.5.5.2/themes/default/easyui.css" />
 		<link rel="stylesheet" href="../jquery-easyui-1.5.5.2/themes/icon.css" />
 		<style>
@@ -11,58 +12,246 @@
 				background-image: url(../img/backImg.png);
 				background-repeat: no-repeat;
 			}
-			
-			.panel-body {
-				border: none !important;
-				background-color: rgba(0, 0, 0, 0) !important;
+			.panel-title{
+				text-align: left;
 			}
-			
+			.panel-header{
+				border: none;
+				border-bottom: solid 1px #979797;
+			}
+			#root-index > .panel-body{
+				background-color: rgba(0, 0, 0, 0);
+			}
+			#root-main div{
+				background-color: #15213F !important;
+				overflow-x: auto;
+			}
+			.panel-body {
+				border: none ;
+			}
 			.layout-panel-north {
-				height: 8% !important;
-				padding: 1%;
 				background-color: #273963;
 			}
-			
+			.layout-panel{
+				border-bottom: solid #FFFFFF 1px;
+			}
+			#root-index > .layout-panel-north{
+				padding: 1%;
+				height: 8% !important;
+			}
+			.layout-panel-west td{
+				font-weight: 650;
+			}
 			.goods-login {
 				background-color: #273963;
-				background-image: url(../img/topImg.png);
+				background-image: url(../img/topImg-white.png);
 				background-repeat: no-repeat;
 				background-size: 40% 100%;
 			}
 			
-			.easyui-linkbutton {
+			.panel-title{
+				height: 1em !important;
+				line-height: 1em !important;
+				padding: 5px;
+			}
+			td{
+				color: #FFFF;
+				letter-spacing: 1.4px;
+			}
+			.datagrid-header td{
+				border:solid 1px #324262 ;
+				border-style: solid ;
+				text-align: center;
+			}
+			.datagrid-header-inner{
 				width: 100%;
-				margin: 0.5% 0;
+			}
+			span{
+				font-size: 1rem !important;
+			}
+			.textbox{
+				background-color: #1C2B50;	
+				border: none;
+			}
+			.textbox .textbox-text{
+				height: 1.5rem ;
+				line-height: 1.5rem;
+			}
+			input{
+				background-color: #1C2B50;
+			}
+			.datagrid-header td.datagrid-header-over{
+				color: #FFFFFF;
+			}
+			#bottom-input{
+				border-left: solid #324262 1px;
+			}
+			#bottom-input input{
+				border: solid #BEBEBE 1px ;
+				
 			}
 		</style>
 	</head>
 
-	<body class="easyui-layout">
+	<body class="easyui-layout" id="root-index">
 		<div data-options="region:'north'" class="goods-login">
 		</div>
-
-		<div data-options="region:'west',split:true" title="系统菜单" style="width: 200px;">
-			<div class="easyui-accordion" data-options="multiple:true">
-				<div title="首页" data-options="">
-					<a href="#" class="easyui-linkbutton">发生警报</a>
-					<a href="#" class="easyui-linkbutton">缺陷收集</a>
-					<a href="#" class="easyui-linkbutton">查询物料</a>
+		<div data-options="region:'center'">
+	       	<div class="easyui-tabs"  data-options="fit:true,border:false,plain:true">
+				<div title="开报工操作" style="padding: 10px">
+					<div class="easyui-layout" id="root-main" fit="true">
+					    <div region="north" class="p-search" style="height:23%" title="">
+					        <div class="easyui-layout" fit="true">
+					            <div region="west" class="p-search" style="width:70%;background-color:lightgray" title="LOT信息">
+					                <form id="fmlot" method="post">
+					                    <table cellpadding="5" style="width:100%">
+					                        <tr>
+					                            <td>Lot ID:</td>
+					                            <td>
+					                            	<input class="easyui-textbox" type="text" id="lot" name="lot" data-options="required:false" editable="false"  value=""></input>
+					                            </td>
+					                            <td> 图  号:</td>
+					                            <td>
+					                               <input class="easyui-textbox" type="text" id="mat_id" name="mat_id" data-options="" editable="false"  value=""></input>
+					                            </td>
+					                            <td>计划开始时间:</td>
+					                            <td>
+					                                <input class="easyui-textbox" type="text" id="plan_start_time" name="plan_start_time" data-options="" editable="false" value=""></input>
+					                            </td>
+					                        </tr>
+					                        <tr>
+					                            <td>Lot状态:</td>
+												<td>
+					                                <input class="easyui-textbox" type="text" id="lot_status" name="lot_status" data-options="" editable="false"  value=""></input>
+					                            </td>
+					                            <td>图号描述:</td>
+					                            <td>
+					                                <input class="easyui-textbox" type="text" id="mat_desc" name="mat_desc" data-options="" editable="false"  value=""></input>
+					                            </td>
+					                            <td>计划结束时间:</td>
+					                            <td>
+					                                <input class="easyui-textbox" type="text" id="plan_end_time" name="plan_end_time" data-options="" editable="false"  value=""></input>
+					                            </td>
+					                        </tr>
+					                    </table>
+					                    <table cellpadding="10" style="width:100%">
+					                        <tr>
+					                            <td>序列号: </td>
+					                            <td>
+					                                <input class="easyui-textbox" type="text" id="sublot_id" name="sublot_id" data-options="" editable="false"  value=""></input>
+					                            </td>
+					                            <td>订单描述:</td>
+					                            <td >
+					                                <input class="easyui-textbox" type="text" id="ord_desc" name="ord_desc" data-options="" editable="false" style="width: 350px;" value=""></input>
+					                            </td>
+					                        </tr>
+					                    </table>
+					                </form>
+					            </div>
+					            <div region="east" class="p-search" style="width:30%;background-color:lightgray" title="ECN列表">
+					                <table id="dgecn" title="" class="easyui-datagrid"
+					                    url="/WIP/ViewEcn"
+					                    toolbar="#toolbar"
+					                    rownumbers="false" fitColumns="false" singleSelect="false"  nowrap="false" data-options="fitColumns:false">
+					                    <thead>
+						                    <tr>
+												<th field="ECN_NO" width="25%">ECN NO</th>
+						                        <th field="UPDATE_TIME" width="35%">变更时间</th>
+						                        <th field="CASE_NO" width="25%">Case NO</th>
+						                        <th field="USER_DESC" width="20%">用户</th>
+											</tr>
+					                    </thead>
+					                </table>
+					            </div>
+					        </div>
+					    </div>
+						<div data-options="region:'center',split:true" style="height:55%;" title="">
+				            <div class="easyui-layout" fit="true">
+								<div region="west" class="p-search" style="width:60%;" title="配置采集关系">
+									<table id="dgecn" title="" class="easyui-datagrid" >
+									    <thead>
+										    <tr>
+												<th field="ECN_NO" width="5%">NO</th>
+										        <th field="UPDATE_TIME" width="15%">物料组</th>
+										        <th field="CASE_NO" width="15%">物料图号</th>
+										        <th field="USER_DESC" width="23%">物料描述</th>
+										        <th field="USER_DESC" width="22%">物料位置</th>
+										        <th field="USER_DESC">物料条码</th>                
+											</tr>
+									    </thead>                
+									</table>               	
+								</div>
+								<div region="east" class="p-search" style="width:40%;background-color:lightgray" title="EDC采集">
+									<table id="dgecn" title="" class="easyui-datagrid">
+									    <thead>
+										    <tr>
+												<th field="ECN_NO" width="8%">NO</th>
+										            <th field="UPDATE_TIME" width="50%">EDC条目</th>
+										            <th field="CASE_NO" width="44%">确认操作</th>
+										        </tr>
+									    </thead>
+									</table>
+								</div>	            
+							</div>
+				        </div>
+						<div data-options="region:'south'" style="height: 25%;">
+				            <div class="easyui-layout" fit="true">
+				                <div region="west" class="p-search" style="width:50%;" title="消息通知">
+				                    <table id="message" name="message"></table>
+				                </div>
+				                <div region="east" id="bottom-input" class="p-search" style="width:50%;background-color:lightgray" title="操作">
+				                    <table align="left">
+				                        <tr>
+				                            <td>
+				                                <b><label id="location" />物料位置：</b>
+				                            </td>
+				                            <td>
+				                                <input type="text" id="matlocation" name="matlocation" style="width:140px" onkeydown="te(event);" />
+				                            </td>
+				                            <td>
+				                                <b><label id="labless" />请输入物料序列号：</b>
+				                            </td>
+				                            <td>
+				                                <input type="text" id="lot_id" name="lot_id" style="width:140px" onkeydown="te(event);" />
+				                            </td>                           
+				                            <div class="root-bottom-button" style="padding: 10px">
+				                                <a href="#" id="matcollect1" name="matcollect1" class="easyui-linkbutton" iconCls="icon-search" onclick="showLot()" style="width: 120px;height:50px;">显示LOT信息</a>
+				                                <a href="#" id="matcollect" name="matcollect" class="easyui-linkbutton" iconCls="icon-search" onclick="matCollect()" style="width: 120px;height:50px;">物料采集</a>
+				                                <a href="#" class="easyui-linkbutton" iconCls="icon-search" onclick="view()"  bottonAlign="right" style="width: 120px;height:50px;">查询图纸</a>
+											</div>
+				                            <!--<td><a href="#" id="restartlot" name="restartlot" class="easyui-linkbutton" iconCls="icon-reload" onclick="reStartLot()" style="width: 120px;height:50px;">重新开工</a></td>
+				                            <td>&nbsp;</td>
+				                            <td><a href="#" id="reendlot" name="reendlot" class="easyui-linkbutton" iconCls="icon-reload" data-options="disabled:true" onclick="reEndLot()" style="width: 120px;height:50px">重新报工</a></td>-->
+				                        </tr>
+				                    </table>
+				                </div>
+				            </div>
+				        </div>        
+					</div>
 				</div>
-				<div title="工具工装管理" data-options="collapsible:false">
-				</div>
-				<div title="工序工站配置" data-options="collapsible:false">
-				</div>
-				<div title="生产订单排序" data-options="collapsible:false">
-				</div>
-				<div title="产线状态管理" data-options="collapsible:false">
-				</div>
-				<div title="产线异常查询" data-options="collapsible:false">
-				</div>
-			</div>
-		</div>
-		<div data-options="region:'center',title:'Main Title',iconCls:'icon-ok'">
-
-		</div>
+	            <!--<div title="DataGrid" style="padding: 5px">
+	                <table class="easyui-datagrid"
+	                       data-options="url:'',method:'get',singleSelect:true,fit:true,fitColumns:true">
+	                    <thead>
+	                        <tr>
+	                            <th data-options="field:'itemid'" width="80">Item ID</th>
+	                            <th data-options="field:'productid'" width="100">Product ID</th>
+	                            <th data-options="field:'listprice',align:'right'" width="80">
+	                                List
+	                                Price
+	                            </th>
+	                            <th data-options="field:'unitcost',align:'right'" width="80">
+	                                Unit
+	                                Cost
+	                            </th>
+	                            <th data-options="field:'attr1'" width="150">Attribute</th>
+	                            <th data-options="field:'status',align:'center'" width="50">Status</th>
+	                        </tr>
+	                    </thead>
+	                </table>
+	            </div>-->
+	        </div>
+	    </div>
 	</body>
 
 	<script src="../jquery-easyui-1.5.5.2/jquery.min.js"></script>

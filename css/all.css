@@ -7,14 +7,15 @@ a {
 	text-decoration: none;
 }
 
-html, body, #__next, .index {
+html, body, #__next, .index ,b{
 	height: 100%;
 	font-family: '微软雅黑', 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB',
-		'Microsoft YaHei',  'WenQuanYi Micro Hei', Arial, sans-serif;
+		'Microsoft YaHei',  'WenQuanYi Micro Hei', Arial, sans-serif !important;
+	font-size: 12px !important;
 }
 div::-webkit-scrollbar {/*滚动条整体样式*/
         width: 5px;     /*高宽分别对应横竖滚动条的尺寸*/
-        height: 1px;
+        height: 5px;
     }
 div::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
         border-radius: 10px;
