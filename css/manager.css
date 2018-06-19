@@ -1,0 +1,173 @@
+.logo {
+	background-color: #273963;
+	background-image: url(../img/topImg-black.png);
+	background-repeat: no-repeat;
+	background-size: 40% 100%;
+	color: #FFFFFF !important;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.logo img {
+	width: 2vw;
+	height: 2vw;
+}
+
+.easyui-layout {
+	background-image: url(../img/backImg.png);
+	background-repeat: no-repeat;
+}
+
+.layout-expand {
+	background: #273963;
+}
+
+.layout-expand .panel-header {
+	border: none;
+}
+
+.panel {
+	text-align: center !important;
+}
+
+.panel-body {
+	border: none !important;
+	background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.layout-panel-north {
+	height: 8% !important;
+	padding: 1%;
+	background-color: #273963;
+}
+
+.easyui-linkbutton {
+	width: 100%;
+	margin: 0.5% 0;
+}
+
+.datagrid-header-row {
+	color: #FFFFFF !important;
+	letter-spacing: 1.4px !important;
+	text-align: center !important;
+	height: 3rem!important;
+}
+
+.datagrid-view,
+.datagrid-header,
+.datagrid-pager,
+.tool-box {
+	background: #15213F !important;
+	color: #fff !important;
+}
+
+.datagrid-cell span {
+	font-size: 1.75rem !important;
+}
+
+.datagrid-header-over {
+	background: #1C2B50 !important;
+	color: #FFFFFF !important;
+}
+
+.datagrid-header td {
+	border-style: solid !important;
+	border-color: #334464 !important;
+	border-width: 0 1px 1px 0;
+}
+
+.line_state {
+	background: #15213F;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.line-row {
+	margin-left: 5%;
+	flex: 1;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.line-row button {
+	height: 80%;
+	width: 18%;
+	margin-right: 2%;
+	box-shadow: 0 2px 12px 0 #1B2E5F;
+	border: none;
+	font-size: 2rem;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+
+.line-row img {
+	width: 30%;
+}
+
+.line-row:first-of-type>button {
+	background: #B34C4C;
+}
+
+.line-row:nth-of-type(2)>button {
+	background: #5D82DC;
+}
+
+.line-row:nth-of-type(3)>button {
+	background: #72A13D;
+}
+
+.line-row:nth-of-type(4)>button {
+	background: #BAB336;
+}
+
+.line-row:last-of-type>button {
+	background: #BA60A8;
+}
+
+.tool-box {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.tool-box a {
+	width: 7%;
+}
+
+.l-btn-text,
+.l-btn {
+	height: 3rem !important;
+	line-height: 3rem !important;
+	font-size: 1.6rem !important;
+}
+.l-btn-icon {
+	width: 20px !important;
+	height:20px !important;
+	margin-right: 2% !important;
+}
+.icon-add {
+	background: url(../img/添加.png) !important;
+	background-position: center center !important;
+	background-size: cover !important;
+}
+
+.icon-edit {
+	background: url(../img/编辑.png) !important;
+	background-position: center center !important;
+	background-size: cover !important;
+}
+
+.icon-search {
+	background: url(../img/查询.png) !important;
+	background-position: center center !important;
+	background-size: cover !important;
+}
+.icon-remove {
+	background: url(../img/删除.png) !important;
+	background-position: center center !important;
+	background-size: cover !important;
+}
