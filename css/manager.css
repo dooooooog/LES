@@ -50,8 +50,6 @@
 .easyui-linkbutton {
 	width: 100%;
 	margin: 0.5% 0;
-	/*background: #5D82DC !important;
-box-shadow: 0 0 5px 0 #1C2B50;*/
 }
 
 .datagrid-header-row {
@@ -70,51 +68,19 @@ box-shadow: 0 0 5px 0 #1C2B50;*/
 	color: #fff !important;
 }
 
-.datagrid-cell span {
-	font-size: 1.75rem !important;
-}
 
-.datagrid-header-over,
-.datagrid-row-over {
-	background: #1C2B50 !important;
-	color: #FFFFFF !important;
-}
-
-.datagrid-header td {
-	border-style: solid !important;
-	border-color: #334464 !important;
-	border-width: 0 1px 1px 0;
-}
-
-.datagrid-body td {
-	border-style: solid !important;
-	border-color: #334464 !important;
-	border-width: 0 1px 1px 0;
-	color: #FFFFFF !important;
-	height: 2.5rem !important;
-}
-
-.datagrid-cell-rownumber {
-	color: #FFFFFF !important;
-}
-
-.datagrid-row-selected {
-	background: #5D82DC !important;
-	box-shadow: 0 0 5px 0 #1C2B50;
-	color: #FFFFFF !important;
-}
 
 .line_state {
-	background: #15213F;
-	height: 100%;
-	width: 100%;
+	height:90%;
+	width: 90%;
+	/*padding: 2% 0;*/
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 }
 
 .line-row {
-	margin-left: 5%;
+	margin-left: 2%;
 	flex: 1;
 	display: flex;
 	justify-content: flex-start;
@@ -131,10 +97,11 @@ box-shadow: 0 0 5px 0 #1C2B50;*/
 	display: flex;
 	align-items: center;
 	cursor: pointer;
+	color: #FFFFFF;
 }
 
 .line-row img {
-	width: 30%;
+	width: 25%;
 }
 
 .line-row:first-of-type>button {
@@ -156,24 +123,17 @@ box-shadow: 0 0 5px 0 #1C2B50;*/
 .line-row:last-of-type>button {
 	background: #BA60A8;
 }
-
 .tool-box {
 	display: flex;
 	justify-content: flex-end;
 }
 
 .tool-box a {
-	width: 5rem;
+	/*width: 5%;*/
+	/*width: 5rem;*/
 	margin-left: 1%;
 	display: flex;
 	justify-content: space-around;
-}
-
-.l-btn-text,
-.l-btn {
-	height: 3rem !important;
-	line-height: 3rem !important;
-	font-size: 1.6rem !important;
 }
 
 .l-btn-icon {
@@ -205,4 +165,9 @@ box-shadow: 0 0 5px 0 #1C2B50;*/
 	background: url(../img/删除.png) !important;
 	background-position: center center !important;
 	background-size: cover !important;
+}
+
+.btn-bg {
+	background: #5D82DC !important;
+    box-shadow: 0 0 5px 0 #1C2B50;
 }

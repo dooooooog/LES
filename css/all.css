@@ -27,3 +27,36 @@ div::-webkit-scrollbar-track {/*滚动条里面轨道*/
         border-radius: 10px;
         background: #EDEDED;
 }
+.datagrid-cell span {
+	font-size: 1.75rem !important;
+}
+
+.datagrid-header-over,
+.datagrid-row-over {
+	background: #1C2B50 !important;
+	color: #FFFFFF !important;
+}
+
+.datagrid-header td {
+	border-style: solid !important;
+	border-color: #334464 !important;
+	border-width: 0 1px 1px 0;
+}
+
+.datagrid-body td {
+	border-style: solid !important;
+	border-color: #334464 !important;
+	border-width: 0 1px 1px 0;
+	color: #FFFFFF !important;
+	height: 2.5rem !important;
+}
+
+.datagrid-cell-rownumber {
+	color: #FFFFFF !important;
+}
+
+.datagrid-row-selected {
+	background: #5D82DC !important;
+	box-shadow: 0 0 5px 0 #1C2B50;
+	color: #FFFFFF !important;
+}

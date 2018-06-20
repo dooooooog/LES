@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>OrderManagement</title>
+		<link rel="stylesheet" href="../css/manager.css" />
+		<link rel="stylesheet" href="../css/all.css" />
+		<link rel="stylesheet" href="../jquery-easyui-1.5.5.2/themes/default/easyui.css" />
+		<link rel="stylesheet" href="../jquery-easyui-1.5.5.2/themes/icon.css" />
+		<link rel="stylesheet" href="../demo.css">
+		<script src="../jquery-easyui-1.5.5.2/jquery.min.js"></script>
+		<script src="../jquery-easyui-1.5.5.2/jquery.easyui.min.js"></script>
+		<style>
+				.easyui-linkbutton {
+				width: 10% !important;
+				height: 3rem !important;
+			}
+			
+			.l-btn-text {
+				vertical-align: middle;
+				height: 100% !important;
+				line-height: 3rem !important;
+			}
+			.pagination span {
+				height: 5em;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div>
+			<table id="tool-manage" class="easyui-datagrid" style="width:100%;" rownumbers="true" pagination="true" pageSize="20" toolbar="#tool-box3">
+				<thead>
+					<tr>
+						<th data-options="field:'ORDER_ID'" width="10%" sortable="true">订单号</th>
+						<th data-options="field:'MAT_ID'" width="10%" sortable="true">物料号</th>
+						<th data-options="field:'FLOW'" width="10%" sortable="true">工艺路线</th>
+						<th data-options="field:'ORDER_DESC'" width="30%" sortable="true">订单描述</th>
+						<th data-options="field:'PLAN_START_TIME'" width="10%" sortable="true">计划开始时间</th>
+						<th data-options="field:'PLAN_END_TIME'" width="10%" sortable="true">计划结束时间</th>
+						<th data-options="field:'EXT_QTY_2'" width="10%" sortable="true">当前顺序</th>
+						<th data-options="field:'EXT_QTY_1'" width="10%" sortable="true">排序顺序</th>
+					</tr>
+				</thead>
+			</table>
+		</div>
+		<div id="tool-box3" class="tool-box">
+			<a href="#" class="easyui-linkbutton btn-bg" plain="true">刷新</a>
+			<a href="#" class="easyui-linkbutton btn-bg" plain="true">确定</a>
+		</div>
+	</body>
+
+</html>
