@@ -123,11 +123,12 @@ input {
 .l-btn-icon{
 	width: 1.5rem;
 	height: 1.5rem;
-	font-size: 1.25rem;
+	font-size: 1.25rem !important;
 }
 td {
 	color: #FFFF;
 	letter-spacing: 1.4px;
+	font-size: 1rem;
 }
 
 .datagrid-header td {
