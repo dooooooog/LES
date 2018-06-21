@@ -7,197 +7,29 @@
 
 		<link rel="stylesheet" href="../jquery-easyui-1.5.5.2/themes/default/easyui.css" />
 		<link rel="stylesheet" href="../jquery-easyui-1.5.5.2/themes/icon.css" />
+		<link rel="stylesheet" href="../css/index.css" />
 		<link rel="stylesheet" href="../css/all.css" />
-		<style>
-			.easyui-layout {
-				background-image: url(../img/backImg.png);
-				background-repeat: no-repeat;
-			}
-			
-			.panel-title {
-				text-align: left;
-			}
-			
-			.panel-header {
-				border: none;
-				border-bottom: solid 1px #979797;
-			}
-			
-			#root-index>.panel-body {
-				background-color: rgba(0, 0, 0, 0);
-			}
-			
-			#root-main div {
-				overflow-x: auto;
-				color: #FFFFFF;
-			}
-			
-			#root-main>.panel-body {
-				border: none;
-			}
-			
-			.root-else div {
-				/*background-color: #15213F !important;*/
-				overflow-x: auto;
-				color: #FFFFFF;
-			}
-			
-			.root-else textarea,
-			input {
-				background-color: #1C2B50;
-				color: #FFFFFF;
-			}
-			
-			.else-label {
-				display: flex;
-				justify-content: center;
-				padding: 1% 0;
-			}
-			
-			.else-label span {
-				height: 2rem;
-			}
-			
-			.else-button {
-				margin-top: 20px;
-			}
-			
-			.l-btn {
-				height: 5rem;
-			}
-			
-			.panel-body {
-				border: none;
-				background-color: #15213F !important;
-			}
-			
-			.layout-panel-north {
-				background-color: #273963;
-			}
-			
-			.layout-panel {
-				border-bottom: solid #FFFFFF 1px;
-			}
-			
-			#root-index>.layout-panel-north {
-				padding: 1%;
-				height: 8% !important;
-			}
-			
-			.layout-panel-west td {
-				font-weight: 650;
-			}
-			
-			.goods-login {
-				background-color: #273963 !important;
-				background-image: url(../img/topImg-white.png);
-				background-repeat: no-repeat;
-				background-size: 40% 100%;
-			}
-			
-			.panel-title {
-				height: 1em !important;
-				line-height: 1em !important;
-				padding: 5px;
-			}
-			
-			.datagrid-header {
-				background: #15213F !important;
-			}
-			
-			td {
-				color: #FFFF;
-				letter-spacing: 1.4px;
-			}
-			
-			.datagrid-header td {
-				text-align: center;
-			}
-			
-			.datagrid-header-inner {
-				width: 100%;
-			}
-			
-			span {
-				font-size: 1rem !important;
-			}
-			
-			.textbox {
-				background-color: #1C2B50;
-				border: none;
-			}
-			
-			.textbox .textbox-text {
-				height: 1.5rem;
-				line-height: 1.5rem;
-			}
-			
-			input {
-				background-color: #1C2B50;
-			}
-			
-			#bottom-input {
-				border-left: solid #324262 1px;
-			}
-			
-			#bottom-input input {
-				border: solid #BEBEBE 1px;
-			}
-			
-			.datagrid-header-row {
-				color: #FFFFFF !important;
-				letter-spacing: 1.4px !important;
-				text-align: center !important;
-				height: 3rem!important;
-			}
-			
-			.datagrid-view,
-			.datagrid-header,
-			.datagrid-pager,
-			.datagrid-td-rownumber {
-				background: #15213F !important;
-				color: #fff !important;
-			}
-			
-			.EDCIcon {
-				height: 2rem;
-				width: 6.5rem;
-			}
-			
-			.EDCIcon span .l-btn-text {
-				height: 1rem;
-				width: 2.5rem;
-			}
-			
-			.makeSure a {
-				display: block;
-			}
-			
-			#EDC .datagrid-cell {
-				display: flex;
-				justify-content: space-around;
-			}
-			
-			#message-line .easyui-linkbutton {
-				background-color: rgba(0, 0, 0, 0);
-			}
-			
-			#message-line td {
-				display: block;
-				height: 1.5rem;
-				padding: .5rem;
-				font-size: 1.5rem;
-			}
-			
-			#message-line .l-btn-text {
-				height: 1.5rem;
-				line-height: 1.5rem;
-			}
-		</style>
 	</head>
 
 	<body class="easyui-layout" id="root-index">
 		<div data-options="region:'north'" class="goods-login">
+			<form style="width: 50%;">
+				<table>
+					<tr>
+						<td width="12%" style="text-align:left"><span>当前产线：</span></td>
+						<td width="12%" style="text-align:left"><span>当前工位：</span></td>
+						<td width="12%" style="text-align:left"><span>登录用户：</span></td>
+						<td width="5%" style="text-align:center">
+							<img src="../img/头像.png" /><br/>注销
+						</td>
+						<td width="5%" style="text-align:center">
+							<img id="fullscreen" src="../img/放大.png" /><br/>放大
+							<td width="5%" style="text-align:center">
+								<img src="../img/缩小.png" /><br/>缩小
+							</td>
+					</tr>
+				</table>
+			</form>
 		</div>
 		<div data-options="region:'center'">
 			<div class="easyui-tabs" data-options="fit:true,border:false,plain:true">
