@@ -2,7 +2,6 @@ html,
 body {
 	height: 100%;
 	width: 100%;
-	font-family: MicrosoftYaHei;
 	color: #000D51;
 }
 
@@ -37,34 +36,36 @@ a {
 	flex-direction: row-reverse;
 	align-items: center;
 	background: url(../img/car.jpg) no-repeat;
-	background-repeat: no-repeat;
+	background-size: 80%;
 	background-position: 100% 0;
 	background-size: cover;
 }
 
 .login-panel {
-	width: 32%;
-	height: 88.7%;
+	width: 40%;
+	height: 90%;
 	margin-right: 2%;
 	background: rgba(255, 255, 255, .74);
-	border-radius: 0.5rem;
+	border-radius: 5px;
 	position: relative;
 }
 
-.icon {
+.qrCode {
+	margin: ;
 	position: absolute;
-	top: 5px;
-	right: 5px;
+	top: 0;
+	right: 0;
 	width: 12%;
 	height: 12%;
-	background: url(../img/IT运维故障.png) repeat center center;
+	background: url(../img/IT运维故障.png) no-repeat ;
+	background-size:100% ;
 	/*border-bottom-left-radius: 100%;*/
 }
 
 .login-panel h3 {
 	margin: 8% 0;
 	font-weight: 400;
-	font-size: 2.75rem;
+	font-size: 2rem;
 	letter-spacing: -0.05rem;
 	text-align: center;
 }
@@ -87,6 +88,7 @@ a {
 input {
 	color: #000D51;
 	font-size: 1.5rem !important;
+	text-align: center;
 }
 
 form {
@@ -100,7 +102,7 @@ form {
 
 label {
 	width: 25%;
-	font-size: 183%;
+	font-size: 1.5rem;
 }
 
 .form-right {
@@ -118,7 +120,7 @@ label {
 	width: 65% !important;
 	height: 75%;
 	border: 2px solid #383735 !important;
-	border-radius: 1.13rem !important;
+	border-radius: 10px !important;
 }
 
 .combobox-item {
@@ -202,10 +204,11 @@ label {
 }
 
 .modal {
-	width: 80%;
+	margin: 0 auto;
+	width: 90%;
+	height: 90%;
 	position: relative;
-	margin: auto;
-	padding: 1.5rem;
+	padding:2%;
 	background: #fff;
 	border-radius: 4px;
 	-webkit-border-radius: 4px;
@@ -215,21 +218,56 @@ label {
 }
 
 .modal .content {
-	margin-top: 1rem;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	text-align: center;
 }
 
+.qr-box{
+	width: 100%;
+}
 .modal .content a {
 	max-width: 60%;
 	margin: auto;
 	display: block;
 }
 
+.error-modal{
+	width: 50%;
+	height: 40%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+.error-modal > .content{
+	font-size: 1.75rem;
+}
 .overlay:target>.modal {
-	transform: translateY(30%) scale(0.9);
+	transform: translateY(2%) scale(0.9);
 	transition-timing-function: cubic-bezier(0.8, 0, 0, 1.5);
 	opacity: 1;
+}
+.overlay:target>.error-modal {
+	transform: translateY(60%) scale(0.9);
+	transition-timing-function: cubic-bezier(0.8, 0, 0, 1.5);
+	opacity: 1;
+}
+.out-button{
+	position: absolute;
+	background-color: #5D82DC;
+	color: #FFFFFF;
+	padding: 10px;
+	bottom: 10px;
+}
+.login-bottom{
+	display: flex;
+	justify-content: center;
+}
+.bottom-a{
+	margin: 1% 5%;
+}
+.bottom-a:hover{
+	color: #0081C2;
 }
