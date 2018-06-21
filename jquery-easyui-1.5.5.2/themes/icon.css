@@ -155,12 +155,12 @@
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
  
-.font-ok:before { content: '\e800'; } /* '' */
-.font-cancel:before { content: '\e801'; } /* '' */
+.font-ok:before { content: '\e800'; color: greenyellow;} /* '' */
+.font-cancel:before { content: '\e801'; color: red;} /* '' */
 .font-search:before { content: '\e802'; } /* '' */
 .font-th-list:before { content: '\e803'; } /* '' */
 .font-tags:before { content: '\e804'; } /* '' */
-.font-attention:before { content: '\e805'; } /* '' */
+.font-attention:before { content: '\e805'; color: yellow;} /* '' */
 .font-trash-empty:before { content: '\e806'; } /* '' */
 .font-calendar:before { content: '\e807'; } /* '' */
 .font-off:before { content: '\e808'; } /* '' */

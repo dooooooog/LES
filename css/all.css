@@ -60,3 +60,12 @@ div::-webkit-scrollbar-track {/*滚动条里面轨道*/
 	box-shadow: 0 0 5px 0 #1C2B50;
 	color: #FFFFFF !important;
 }
+.right{
+	color: greenyellow;
+}
+.cancel{
+	color: red;
+}
+.error{
+	color: yellow;
+}
