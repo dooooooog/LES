@@ -24,9 +24,8 @@
 				background-color: rgba(0, 0, 0, 0);
 			}
 			#root-main div{
-				background-color: #15213F !important;
+				/*background-color: #15213F !important;*/
 				overflow-x: auto;
-				color: #FFFFFF;
 			}
 			.root-else div{
 				background-color: #15213F !important;
@@ -54,8 +53,9 @@
 			.l-btn{
 				height: 5rem;
 			}
-			.panel-body {
+			.panel-body{
 				border: none ;
+				background-color: #15213F !important;
 			}
 			.layout-panel-north {
 				background-color: #273963;
@@ -82,13 +82,14 @@
 				line-height: 1em !important;
 				padding: 5px;
 			}
+			.datagrid-header {
+				background: #15213F !important;
+			}
 			td{
 				color: #FFFF;
 				letter-spacing: 1.4px;
 			}
 			.datagrid-header td{
-				border:solid 1px #324262 ;
-				border-style: solid ;
 				text-align: center;
 			}
 			.datagrid-header-inner{
@@ -113,50 +114,6 @@
 			}
 			#bottom-input input{
 				border: solid #BEBEBE 1px ;	
-			}
-			.datagrid-header-row {
-				color: #FFFFFF !important;
-				letter-spacing: 1.4px !important;
-				text-align: center !important;
-				height: 3rem!important;
-			}
-			
-			.datagrid-view,
-			.datagrid-header,
-			.datagrid-pager,
-			.tool-box,
-			.datagrid-td-rownumber {
-				background: #15213F !important;
-				color: #fff !important;
-			}
-			.EDCIcon{
-				height: 2rem;
-				width: 6.5rem;
-			}
-			.EDCIcon span .l-btn-text{
-				height: 1rem ;
-				width: 2.5rem ;
-			}
-
-			.makeSure a{
-				display: block;
-			}
-			#EDC .datagrid-cell{
-				display: flex;
-				justify-content: space-around;
-			}
-			#message-line .easyui-linkbutton{
-				background-color: rgba(0, 0, 0, 0);
-			}
-			#message-line td{
-				display: block;
-				height: 1.5rem;
-				padding: .5rem;
-				font-size: 1.5rem;
-			}
-			#message-line .l-btn-text{
-				height: 1.5rem;
-				line-height: 1.5rem;
 			}
 		</style>
 	</head>
@@ -224,7 +181,7 @@
 					                    <thead>
 						                    <tr>
 												<th field="ECN_NO" width="25%">ECN NO</th>
-						                        <th field="UPDATE_TIME" width="35%">变更时间</th>
+						                        <th field="UPDATE_TIME" width="30%">变更时间</th>
 						                        <th field="CASE_NO" width="25%">Case NO</th>
 						                        <th field="USER_DESC" width="20%">用户</th>
 											</tr>
@@ -244,15 +201,15 @@
 						<div data-options="region:'center',split:true" style="height:55%;" title="">
 				            <div class="easyui-layout" fit="true">
 								<div region="west" class="p-search" style="width:60%;" title="配置采集关系">
-									<table id="dgecn" title="" class="easyui-datagrid" >
+									<table id="dgecn" title="" class="easyui-datagrid" rownumbers="true" >
 									    <thead>
 										    <tr>
-												<th field="ECN_NO" width="5%">NO</th>
+												<!--<th field="ECN_NO" width="5%">NO</th>-->
 										        <th field="UPDATE_TIME" width="15%">物料组</th>
 										        <th field="CASE_NO" width="15%">物料图号</th>
 										        <th field="USER_DESC" width="23%">物料描述</th>
 										        <th field="USER_DESC" width="22%">物料位置</th>
-										        <th field="USER_DESC">物料条码</th>                
+										        <th field="USER_DESC"width="20%">物料条码</th>                
 											</tr>
 									    </thead>
 									    <tbody>
@@ -267,25 +224,19 @@
 					                    </tbody>
 									</table>               	
 								</div>
-								<div region="east" id="EDC" class="p-search" style="width:40%;background-color:lightgray" title="EDC采集">
-									<table id="dgecn" title="" class="easyui-datagrid">
+								<div region="east" class="p-search" style="width:40%;background-color:lightgray" title="EDC采集">
+									<table id="dgecn" title="" class="easyui-datagrid" rownumbers="true">
 									    <thead>
 										    <tr>
-												<th field="ECN_NO" width="8%">NO</th>
 										            <th field="UPDATE_TIME" width="50%">EDC条目</th>
-										            <th field="CASE_NO" width="44%">确认操作
-
-										            </th>
+										            <th field="CASE_NO" width="44%">确认操作</th>
 										        </tr>
 									    </thead>
 									    <tbody>
 									    	<tr>
 									    		<td>1</td>
 					                    		<td>1</td>
-					                    		<td>
-										            <a class="easyui-linkbutton EDCIcon right" iconCls="font-ok"></a>
-										            <a class="easyui-linkbutton EDCIcon cancel" iconCls="font-cancel"></a>
-					                    		</td>
+					                    		<td>1</td>
 									    	</tr>
 									    </tbody>
 									</table>
@@ -294,21 +245,9 @@
 				        </div>
 						<div data-options="region:'south'" style="height: 25%;">
 				            <div class="easyui-layout" fit="true">
-				                <div id="message-line" region="west" class="p-search" style="width:50%;" title="消息通知">
+				                <div region="west" class="p-search" style="width:50%;" title="消息通知">
 				                    <table id="message" name="message">
-				                    	<tbody>
-									    	<tr>
-					                    		<td>
-										            <a class="easyui-linkbutton" iconCls="font-ok">2018/03/01 AAAAAAAAA</a>
-					                    		</td>
-					                    		<td>
-										            <a class="easyui-linkbutton" iconCls="font-cancel">2018/03/01 NBBBBBBBB</a>
-					                    		</td>
-					                    		<td>
-										            <a class="easyui-linkbutton" iconCls="font-attention">2018/03/01 NBBBBBBBB</a>
-					                    		</td>
-									    	</tr>
-									    </tbody>
+				                    	
 				                    </table>
 				                </div>
 				                <div region="east" id="bottom-input" class="p-search" style="width:50%;background-color:lightgray" title="操作">
