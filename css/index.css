@@ -27,7 +27,8 @@
 
 .root-else,
 .root-else1 div {
-	/*background-color: #15213F !important;*/
+	font-weight: 450;
+	font-size: 1.5rem;
 	overflow-x: auto;
 	color: #FFFFFF;
 }
@@ -38,7 +39,10 @@ input {
 	background-color: #1C2B50;
 	color: #FFFFFF;
 }
-
+.root-else1 .l-btn-text{
+	height: 5rem;
+	line-height: 5rem;
+}
 .root-else1>.panel-body {
 	font-size: 1.5rem !important;
 }
@@ -95,9 +99,18 @@ input {
 	background-color: #273963 !important;
 	background-image: url(../img/topImg-white.png);
 	background-repeat: no-repeat;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
 	background-size: 40% 100%;
 }
-
+.goods-login span {
+	font-size: 1.3rem;
+}
+.goods-login img {
+	width: 2vw;
+	height: 2vw;
+}
 .panel-title {
 	height: 1em !important;
 	line-height: 1em !important;
@@ -107,7 +120,11 @@ input {
 .datagrid-header {
 	background: #15213F !important;
 }
-
+.l-btn-icon{
+	width: 1.5rem;
+	height: 1.5rem;
+	font-size: 1.25rem;
+}
 td {
 	color: #FFFF;
 	letter-spacing: 1.4px;

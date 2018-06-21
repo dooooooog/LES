@@ -14,6 +14,23 @@
 
 	<body class="easyui-layout" id="root-index">
 		<div data-options="region:'north'" class="goods-login">
+			<form style="width: 50%;color: #FFFFFF;">
+				<table>
+					<tr>
+						<td width="12%" style="text-align:left"><span>当前产线：</span></td>
+						<td width="12%" style="text-align:left"><span>当前工位：</span></td>
+						<td width="12%" style="text-align:left"><span>登录用户：</span></td>
+						<td width="5%" style="text-align:center">
+							<img src="../img/头像.png" /><br/>注销
+						</td>
+						<td width="5%" style="text-align:center">
+							<img id="fullscreen" src="../img/放大.png" /><br/>放大
+							<td width="5%" style="text-align:center">
+								<img src="../img/缩小.png" /><br/>缩小
+							</td>
+					</tr>
+				</table>
+			</form>
 		</div>
 		<div data-options="region:'center'">
 			<div class="easyui-tabs" data-options="fit:true,border:false,plain:true">
@@ -234,7 +251,6 @@
 								<center>
 									<a href="#" class="easyui-linkbutton" iconCls="font-ok" onclick="SaveDefect()">确认</a>
 									<a href="#" class="easyui-linkbutton" iconCls="font-reply" onclick="Refresh()">刷新</a>
-									<a href="#" class="easyui-linkbutton" iconCls="font-cancel" onclick="ClearData()">取消</a>
 								</center>
 							</div>
 						</form>
