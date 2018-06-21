@@ -4,7 +4,7 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<title>demo</title>
-		
+
 		<link rel="stylesheet" href="../jquery-easyui-1.5.5.2/themes/default/easyui.css" />
 		<link rel="stylesheet" href="../jquery-easyui-1.5.5.2/themes/icon.css" />
 		<link rel="stylesheet" href="../css/all.css" />
@@ -13,108 +13,137 @@
 				background-image: url(../img/backImg.png);
 				background-repeat: no-repeat;
 			}
-			.panel-title{
+			
+			.panel-title {
 				text-align: left;
 			}
-			.panel-header{
+			
+			.panel-header {
 				border: none;
 				border-bottom: solid 1px #979797;
 			}
-			#root-index > .panel-body{
+			
+			#root-index>.panel-body {
 				background-color: rgba(0, 0, 0, 0);
 			}
-			#root-main div{
+			
+			#root-main div {
 				overflow-x: auto;
 				color: #FFFFFF;
 			}
-			.root-else div{
-				background-color: #15213F !important;
+			
+			#root-main>.panel-body {
+				border: none;
+			}
+			
+			.root-else div {
+				/*background-color: #15213F !important;*/
 				overflow-x: auto;
 				color: #FFFFFF;
 			}
-			.root-else textarea , input{
+			
+			.root-else textarea,
+			input {
 				background-color: #1C2B50;
 				color: #FFFFFF;
 			}
-			.root-else{
-				
-			}
-			.else-label{
+			
+			.else-label {
 				display: flex;
 				justify-content: center;
 				padding: 1% 0;
 			}
-			.else-label span{
+			
+			.else-label span {
 				height: 2rem;
 			}
-			.else-button{
+			
+			.else-button {
 				margin-top: 20px;
 			}
-			.l-btn{
+			
+			.l-btn {
 				height: 5rem;
 			}
+			
 			.panel-body {
-				border: none ;
+				border: none;
 				background-color: #15213F !important;
 			}
+			
 			.layout-panel-north {
 				background-color: #273963;
 			}
-			.layout-panel{
+			
+			.layout-panel {
 				border-bottom: solid #FFFFFF 1px;
 			}
-			#root-index > .layout-panel-north{
+			
+			#root-index>.layout-panel-north {
 				padding: 1%;
 				height: 8% !important;
 			}
-			.layout-panel-west td{
+			
+			.layout-panel-west td {
 				font-weight: 650;
 			}
+			
 			.goods-login {
-				background-color: #273963;
+				background-color: #273963 !important;
 				background-image: url(../img/topImg-white.png);
 				background-repeat: no-repeat;
 				background-size: 40% 100%;
 			}
 			
-			.panel-title{
+			.panel-title {
 				height: 1em !important;
 				line-height: 1em !important;
 				padding: 5px;
 			}
-			.datagrid-header{
+			
+			.datagrid-header {
 				background: #15213F !important;
 			}
-			td{
+			
+			td {
 				color: #FFFF;
 				letter-spacing: 1.4px;
 			}
-			.datagrid-header td{
+			
+			.datagrid-header td {
 				text-align: center;
 			}
-			.datagrid-header-inner{
+			
+			.datagrid-header-inner {
 				width: 100%;
 			}
-			span{
+			
+			span {
 				font-size: 1rem !important;
 			}
-			.textbox{
-				background-color: #1C2B50;	
+			
+			.textbox {
+				background-color: #1C2B50;
 				border: none;
 			}
-			.textbox .textbox-text{
-				height: 1.5rem ;
+			
+			.textbox .textbox-text {
+				height: 1.5rem;
 				line-height: 1.5rem;
 			}
-			input{
+			
+			input {
 				background-color: #1C2B50;
 			}
-			#bottom-input{
+			
+			#bottom-input {
 				border-left: solid #324262 1px;
 			}
-			#bottom-input input{
-				border: solid #BEBEBE 1px ;	
+			
+			#bottom-input input {
+				border: solid #BEBEBE 1px;
 			}
+			
 			.datagrid-header-row {
 				color: #FFFFFF !important;
 				letter-spacing: 1.4px !important;
@@ -125,37 +154,42 @@
 			.datagrid-view,
 			.datagrid-header,
 			.datagrid-pager,
-			.tool-box,
 			.datagrid-td-rownumber {
 				background: #15213F !important;
 				color: #fff !important;
 			}
-			.EDCIcon{
+			
+			.EDCIcon {
 				height: 2rem;
 				width: 6.5rem;
 			}
-			.EDCIcon span .l-btn-text{
-				height: 1rem ;
-				width: 2.5rem ;
+			
+			.EDCIcon span .l-btn-text {
+				height: 1rem;
+				width: 2.5rem;
 			}
-
-			.makeSure a{
+			
+			.makeSure a {
 				display: block;
 			}
-			#EDC .datagrid-cell{
+			
+			#EDC .datagrid-cell {
 				display: flex;
 				justify-content: space-around;
 			}
-			#message-line .easyui-linkbutton{
+			
+			#message-line .easyui-linkbutton {
 				background-color: rgba(0, 0, 0, 0);
 			}
-			#message-line td{
+			
+			#message-line td {
 				display: block;
 				height: 1.5rem;
 				padding: .5rem;
 				font-size: 1.5rem;
 			}
-			#message-line .l-btn-text{
+			
+			#message-line .l-btn-text {
 				height: 1.5rem;
 				line-height: 1.5rem;
 			}
@@ -166,249 +200,254 @@
 		<div data-options="region:'north'" class="goods-login">
 		</div>
 		<div data-options="region:'center'">
-	       	<div class="easyui-tabs"  data-options="fit:true,border:false,plain:true">
+			<div class="easyui-tabs" data-options="fit:true,border:false,plain:true">
 				<div title="开报工操作" style="padding: 10px">
 					<div class="easyui-layout" id="root-main" fit="true">
-					    <div region="north" class="p-search" style="height:23%" title="">
-					        <div class="easyui-layout" fit="true">
-					            <div region="west" class="p-search" style="width:70%;background-color:lightgray" title="LOT信息">
-					                <form id="fmlot" method="post">
-					                    <table cellpadding="5" style="width:100%">
-					                        <tr>
-					                            <td>Lot ID:</td>
-					                            <td>
-					                            	<input class="easyui-textbox" type="text" id="lot" name="lot" data-options="required:false" editable="false"  value=""></input>
-					                            </td>
-					                            <td> 图  号:</td>
-					                            <td>
-					                               <input class="easyui-textbox" type="text" id="mat_id" name="mat_id" data-options="" editable="false"  value=""></input>
-					                            </td>
-					                            <td>计划开始时间:</td>
-					                            <td>
-					                                <input class="easyui-textbox" type="text" id="plan_start_time" name="plan_start_time" data-options="" editable="false" value=""></input>
-					                            </td>
-					                        </tr>
-					                        <tr>
-					                            <td>Lot状态:</td>
+						<div region="north" class="p-search" style="height:23%" title="">
+							<div class="easyui-layout" fit="true">
+								<div region="west" class="p-search" style="width:70%;background-color:lightgray" title="LOT信息">
+									<form id="fmlot" method="post">
+										<table cellpadding="5" style="width:100%">
+											<tr>
+												<td>Lot ID:</td>
 												<td>
-					                                <input class="easyui-textbox" type="text" id="lot_status" name="lot_status" data-options="" editable="false"  value=""></input>
-					                            </td>
-					                            <td>图号描述:</td>
-					                            <td>
-					                                <input class="easyui-textbox" type="text" id="mat_desc" name="mat_desc" data-options="" editable="false"  value=""></input>
-					                            </td>
-					                            <td>计划结束时间:</td>
-					                            <td>
-					                                <input class="easyui-textbox" type="text" id="plan_end_time" name="plan_end_time" data-options="" editable="false"  value=""></input>
-					                            </td>
-					                        </tr>
-					                    </table>
-					                    <table cellpadding="10" style="width:100%">
-					                        <tr>
-					                            <td>序列号: </td>
-					                            <td>
-					                                <input class="easyui-textbox" type="text" id="sublot_id" name="sublot_id" data-options="" editable="false"  value=""></input>
-					                            </td>
-					                            <td>订单描述:</td>
-					                            <td >
-					                                <input class="easyui-textbox" type="text" id="ord_desc" name="ord_desc" data-options="" editable="false" style="" value=""></input>
-					                            </td>
-					                        </tr>
-					                    </table>
-					                </form>
-					            </div>
-					            <div region="east" class="p-search" style="width:30%;background-color:lightgray" title="ECN列表">
-					                <table id="dgecn" title="" class="easyui-datagrid"
-					                    url="/WIP/ViewEcn"
-					                    toolbar="#toolbar"
-					                    rownumbers="false" fitColumns="false" singleSelect="false"  nowrap="false" data-options="fitColumns:false">
-					                    <thead>
-						                    <tr>
-												<th field="ECN_NO" width="25%">ECN NO</th>
-						                        <th field="UPDATE_TIME" width="30%">变更时间</th>
-						                        <th field="CASE_NO" width="25%">Case NO</th>
-						                        <th field="USER_DESC" width="20%">用户</th>
+													<input class="easyui-textbox" type="text" id="lot" name="lot" data-options="required:false" editable="false" value=""></input>
+												</td>
+												<td> 图 号:</td>
+												<td>
+													<input class="easyui-textbox" type="text" id="mat_id" name="mat_id" data-options="" editable="false" value=""></input>
+												</td>
+												<td>计划开始时间:</td>
+												<td>
+													<input class="easyui-textbox" type="text" id="plan_start_time" name="plan_start_time" data-options="" editable="false" value=""></input>
+												</td>
 											</tr>
-					                    </thead>
-					                    <tbody>
-					                    	<tr>
-					                    		<td>1</td>
-					                    		<td>1</td>
-					                    		<td>1</td>
-					                    		<td>1</td>
-					                    	</tr>
-					                    </tbody>
-					                </table>
-					            </div>
-					        </div>
-					    </div>
+											<tr>
+												<td>Lot状态:</td>
+												<td>
+													<input class="easyui-textbox" type="text" id="lot_status" name="lot_status" data-options="" editable="false" value=""></input>
+												</td>
+												<td>图号描述:</td>
+												<td>
+													<input class="easyui-textbox" type="text" id="mat_desc" name="mat_desc" data-options="" editable="false" value=""></input>
+												</td>
+												<td>计划结束时间:</td>
+												<td>
+													<input class="easyui-textbox" type="text" id="plan_end_time" name="plan_end_time" data-options="" editable="false" value=""></input>
+												</td>
+											</tr>
+										</table>
+										<table cellpadding="10" style="width:100%">
+											<tr>
+												<td>序列号: </td>
+												<td>
+													<input class="easyui-textbox" type="text" id="sublot_id" name="sublot_id" data-options="" editable="false" value=""></input>
+												</td>
+												<td>订单描述:</td>
+												<td>
+													<input class="easyui-textbox" type="text" id="ord_desc" name="ord_desc" data-options="" editable="false" style="" value=""></input>
+												</td>
+											</tr>
+										</table>
+									</form>
+								</div>
+								<div region="east" class="p-search" style="width:30%;background-color:lightgray" title="ECN列表">
+									<table id="dgecn" title="" class="easyui-datagrid" url="/WIP/ViewEcn" toolbar="#toolbar" rownumbers="false" fitColumns="false" singleSelect="false" nowrap="false" data-options="fitColumns:false">
+										<thead>
+											<tr>
+												<th field="ECN_NO" width="25%">ECN NO</th>
+												<th field="UPDATE_TIME" width="30%">变更时间</th>
+												<th field="CASE_NO" width="25%">Case NO</th>
+												<th field="USER_DESC" width="20%">用户</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>1</td>
+												<td>1</td>
+												<td>1</td>
+												<td>1</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
 						<div data-options="region:'center',split:true" style="height:55%;" title="">
-				            <div class="easyui-layout" fit="true">
+							<div class="easyui-layout" fit="true">
 								<div region="west" class="p-search" style="width:60%;" title="配置采集关系">
 									<table id="dgecn" title="" class="easyui-datagrid" rownumbers="true">
-									    <thead>
-										    <tr>
-										        <th field="UPDATE_TIME" width="15%">物料组</th>
-										        <th field="CASE_NO" width="15%">物料图号</th>
-										        <th field="USER_DESC" width="23%">物料描述</th>
-										        <th field="USER_DESC" width="22%">物料位置</th>
-										        <th field="USER_DESC" width="20">物料条码</th>                
+										<thead>
+											<tr>
+												<th field="UPDATE_TIME" width="15%">物料组</th>
+												<th field="CASE_NO" width="15%">物料图号</th>
+												<th field="USER_DESC" width="23%">物料描述</th>
+												<th field="USER_DESC" width="22%">物料位置</th>
+												<th field="USER_DESC" width="20">物料条码</th>
 											</tr>
-									    </thead>
-									    <tbody>
-					                    	<tr>
-					                    		<td>1</td>
-					                    		<td>1</td>
-					                    		<td>1</td>
-					                    		<td>1</td>
-					                    		<td>1</td>
-					                    		<td>1</td>
-					                    	</tr>
-					                    </tbody>
-									</table>               	
+										</thead>
+										<tbody>
+											<tr>
+												<td>1</td>
+												<td>1</td>
+												<td>1</td>
+												<td>1</td>
+												<td>1</td>
+												<td>1</td>
+											</tr>
+										</tbody>
+									</table>
 								</div>
 								<div region="east" id="EDC" class="p-search" style="width:40%;background-color:lightgray" title="EDC采集">
-									<table id="dgecn" title="" class="easyui-datagrid" rownumber = "true">
-									    <thead>
-										    <tr>
-										        <th field="UPDATE_TIME" width="50%">EDC条目</th>
-										        <th field="CASE_NO" width="44%">确认操作</th>
-										        </tr>
-									    </thead>
-									    <tbody>
-									    	<tr>
-									    		<td>1</td>
-					                    		<td>1</td>
-					                    		<td>
-										            <a class="easyui-linkbutton EDCIcon right" iconCls="font-ok"></a>
-										            <a class="easyui-linkbutton EDCIcon cancel" iconCls="font-cancel"></a>
-					                    		</td>
-									    	</tr>
-									    </tbody>
+									<table id="dgecn" title="" class="easyui-datagrid" rownumber="true">
+										<thead>
+											<tr>
+												<th field="UPDATE_TIME" width="50%">EDC条目</th>
+												<th field="CASE_NO" width="50%">确认操作</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>1</td>
+												<td>
+													<a class="easyui-linkbutton EDCIcon right" iconCls="font-ok"></a>
+													<a class="easyui-linkbutton EDCIcon cancel" iconCls="font-cancel"></a>
+												</td>
+											</tr>
+										</tbody>
 									</table>
-								</div>	            
+								</div>
 							</div>
-				        </div>
+						</div>
 						<div data-options="region:'south'" style="height: 25%;">
-				            <div class="easyui-layout" fit="true">
-				                <div id="message-line" region="west" class="p-search" style="width:50%;" title="消息通知">
-				                    <table id="message" name="message">
-				                    	<tbody>
-									    	<tr>
-					                    		<td>
-										            <a class="easyui-linkbutton" iconCls="font-ok">2018/03/01 AAAAAAAAA</a>
-					                    		</td>
-					                    		<td>
-										            <a class="easyui-linkbutton" iconCls="font-cancel">2018/03/01 NBBBBBBBB</a>
-					                    		</td>
-					                    		<td>
-										            <a class="easyui-linkbutton" iconCls="font-attention">2018/03/01 NBBBBBBBB</a>
-					                    		</td>
-									    	</tr>
-									    </tbody>
-				                    </table>
-				                </div>
-				                <div region="east" id="bottom-input" class="p-search" style="width:50%;background-color:lightgray" title="操作">
-				                    <table align="left">
-				                        <tr>
-				                            <td>
-				                                <b><label id="location" />物料位置：</b>
-				                            </td>
-				                            <td>
-				                                <input type="text" id="matlocation" name="matlocation" style="width:140px" onkeydown="te(event);" />
-				                            </td>
-				                            <td>
-				                                <b><label id="labless" />请输入物料序列号：</b>
-				                            </td>
-				                            <td>
-				                                <input type="text" id="lot_id" name="lot_id" style="width:140px" onkeydown="te(event);" />
-				                            </td>                           
-				                            <div class="root-bottom-button" style="padding: 10px">
-				                                <a href="#" id="matcollect1" name="matcollect1" class="easyui-linkbutton" iconCls="font-search" onclick="showLot()" style="width: 120px;height:50px;">显示LOT信息</a>
-				                                <a href="#" id="matcollect" name="matcollect" class="easyui-linkbutton" iconCls="font-search" onclick="matCollect()" style="width: 120px;height:50px;">物料采集</a>
-				                                <a href="#" class="easyui-linkbutton" iconCls="font-search" onclick="view()"  bottonAlign="right" style="width: 120px;height:50px;">查询图纸</a>
+							<div class="easyui-layout" fit="true">
+								<div id="message-line" region="west" class="p-search" style="width:50%;" title="消息通知">
+									<table id="message" name="message">
+										<tbody>
+											<tr>
+												<td>
+													<a class="easyui-linkbutton" iconCls="font-ok">2018/03/01 AAAAAAAAA</a>
+												</td>
+												<td>
+													<a class="easyui-linkbutton" iconCls="font-cancel">2018/03/01 NBBBBBBBB</a>
+												</td>
+												<td>
+													<a class="easyui-linkbutton" iconCls="font-attention">2018/03/01 NBBBBBBBB</a>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div region="east" id="bottom-input" class="p-search" style="width:50%;background-color:lightgray" title="操作">
+									<table align="left">
+										<tr>
+											<td>
+												<b><label id="location" />物料位置：</b>
+											</td>
+											<td>
+												<input type="text" id="matlocation" name="matlocation" style="width:140px" onkeydown="te(event);" />
+											</td>
+											<td>
+												<b><label id="labless" />请输入物料序列号：</b>
+											</td>
+											<td>
+												<input type="text" id="lot_id" name="lot_id" style="width:140px" onkeydown="te(event);" />
+											</td>
+											<div class="root-bottom-button" style="padding: 10px">
+												<a href="#" id="matcollect1" name="matcollect1" class="easyui-linkbutton" iconCls="font-search" onclick="showLot()" style="width: 120px;height:50px;">显示LOT信息</a>
+												<a href="#" id="matcollect" name="matcollect" class="easyui-linkbutton" iconCls="font-search" onclick="matCollect()" style="width: 120px;height:50px;">物料采集</a>
+												<a href="#" class="easyui-linkbutton" iconCls="font-search" onclick="view()" bottonAlign="right" style="width: 120px;height:50px;">查询图纸</a>
 											</div>
-				                            <!--<td><a href="#" id="restartlot" name="restartlot" class="easyui-linkbutton" iconCls="icon-reload" onclick="reStartLot()" style="width: 120px;height:50px;">重新开工</a></td>
+											<!--<td><a href="#" id="restartlot" name="restartlot" class="easyui-linkbutton" iconCls="icon-reload" onclick="reStartLot()" style="width: 120px;height:50px;">重新开工</a></td>
 				                            <td>&nbsp;</td>
 				                            <td><a href="#" id="reendlot" name="reendlot" class="easyui-linkbutton" iconCls="icon-reload" data-options="disabled:true" onclick="reEndLot()" style="width: 120px;height:50px">重新报工</a></td>-->
-				                        </tr>
-				                    </table>
-				                </div>
-				            </div>
-				        </div>        
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
-	            <div class="root-else" title="物料查询" style="padding: 5px;width: 100%;">
-					<table id="dgecn" title="" class="easyui-datagrid"
-					        url="/WIP/ViewEcn"
-					        toolbar="#toolbar"
-					        rownumbers="false" fitColumns="false" singleSelect="false"  nowrap="false" data-options="fitColumns:false">
-				    	<thead>
-				       		<tr>
-				                <!-- 因数据库返回字段名称默认全大家且EASYUI框架区分大小写，所以参数都大写-->
-				                <th field="NO" width="5%">NO</th>
-				                <th field="SEQ_NUM" width="10%"> 物料序号</th>
-				                <th field="MAT_ID" width="10%">物料编号</th>
-				                <th field="MAT_VER" width="10%">物料版本</th>
-				                <th field="MAT_DESC" width="30%">物料描述</th>
-				                <th field="PART_GRP" width="10%">替换组编号</th>
-				                <th field="MAT_QTY" width="5%">数量</th>
-				                <th field="SERIAL_INPUT_FLAG" width="10%">是否需要采集</th>
-				                <th field="SERIAL_TYPE" width="10%">采集类型</th>
-				            </tr>
-				        </thead>
+				<div class="root-else" title="物料查询" style="padding: 5px;width: 100%;">
+					<table id="dgecn" title="" class="easyui-datagrid" url="/WIP/ViewEcn" toolbar="#toolbar" rownumbers="true" fitColumns="false" singleSelect="false" nowrap="false" data-options="fitColumns:false">
+						<thead>
+							<tr>
+								<!-- 因数据库返回字段名称默认全大家且EASYUI框架区分大小写，所以参数都大写-->
+								<!--				                <th field="NO" width="5%">NO</th>-->
+								<th field="SEQ_NUM" width="10%"> 物料序号</th>
+								<th field="MAT_ID" width="10%">物料编号</th>
+								<th field="MAT_VER" width="10%">物料版本</th>
+								<th field="MAT_DESC" width="35%">物料描述</th>
+								<th field="PART_GRP" width="10%">替换组编号</th>
+								<th field="MAT_QTY" width="5%">数量</th>
+								<th field="SERIAL_INPUT_FLAG" width="10%">是否需要采集</th>
+								<th field="SERIAL_TYPE" width="10%">采集类型</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>1</td>
+								<td>1</td>
+								<td>1</td>
+								<td>1</td>
+								<td>1</td>
+								<td>1</td>
+								<td>1</td>
+							</tr>
+						</tbody>
 					</table>
 				</div>
 				<div class="root-else" title="缺陷收集" style="padding: 3% 20%;">
-				    <div id="defect_collect" class="easyui-panel" title="缺陷收集">
-				        <form id="fm" method="post" style="margin-bottom:40px;padding-top: 2%;">
-				            <div class="else-label">
-				                <label>缺陷内容代码:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input id="DEFECT_CONTENT_CODE" name="DEFECT_CONTENT_CODE" type="text" class="easyui-textbox" /><br /><br />
-				            </div>
-				            <div class="else-label">
-				                <label>缺陷原因代码:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input id="DEFECT_REASON" name="DEFECT_REASON" type="text" class="easyui-textbox" /><br /><br />
-				            </div>
-				            <div id="rework">
-				                <center>
-				                    <label style=""> 返工类型：</label>
-				                    <label><input id="ONLINE" name="off_on" type="radio" value="0" />线上返工</label>
-				                    <label><input id="OFFLINE" name="off_on" type="radio" value="1" />线下返工</label>
-				                </center>
-				            </div>
-				            <div class="else-button">
-				                <center >
-				                    <a href="#" class="easyui-linkbutton" onclick="SaveDefect()">确认</a>
-				                    <a href="#" class="easyui-linkbutton" onclick="Refresh()">刷新</a>
-				                    <a href="#" class="easyui-linkbutton" onclick="ClearData()">取消</a>
-				                </center>
-				            </div>
-				        </form>
-				    </div>
+					<div id="defect_collect" class="easyui-panel" title="缺陷收集" style="border: 1px solid #95B8E7;border-top: 0;">
+						<form id="fm" method="post" style="margin-bottom:40px;padding-top: 2%;">
+							<div class="else-label">
+								<label>缺陷内容代码:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input id="DEFECT_CONTENT_CODE" name="DEFECT_CONTENT_CODE" type="text" class="easyui-textbox" /><br /><br />
+							</div>
+							<div class="else-label">
+								<label>缺陷原因代码:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input id="DEFECT_REASON" name="DEFECT_REASON" type="text" class="easyui-textbox" /><br /><br />
+							</div>
+							<div id="rework">
+								<center>
+									<label style=""> 返工类型：</label>
+									<label><input id="ONLINE" name="off_on" type="radio" value="0" />线上返工</label>
+									<label><input id="OFFLINE" name="off_on" type="radio" value="1" />线下返工</label>
+								</center>
+							</div>
+							<div class="else-button">
+								<center>
+									<a href="#" class="easyui-linkbutton" onclick="SaveDefect()">确认</a>
+									<a href="#" class="easyui-linkbutton" onclick="Refresh()">刷新</a>
+									<a href="#" class="easyui-linkbutton" onclick="ClearData()">取消</a>
+								</center>
+							</div>
+						</form>
+					</div>
 				</div>
 				<div class="root-else" title="发生警报" style="padding: 3% 20%;">
-				    <div class="easyui-panel" title="报警">
-				        <form id="alarm_form" method="post" style="padding-top:50px;">
-				            <center>
-				                <select class="easyui-combobox" label="报警类型" id="ALARM_TYPE" name="ALARM_TYPE" labelPostion="left" style="width:40%"></select><br /><br />
-				                <select class="easyui-combobox" label="报警ID" id="ALARM_ID" name="ALARM_ID" labelPostion="left" style="width:40%" data-options="valueField:'ALARM_ID',textField:'ALARM_DESC'"></select><br /><br />
-				                <div style="margin-top:24px">
-				                    <label style="margin: 0 auto;margin: 0 0 2% 0;display: block;">报警内容:</label>
+					<div class="easyui-panel" title="报警" style="border: 1px solid #95B8E7;border-top: 0;">
+						<form id="alarm_form" method="post" style="padding-top:50px;">
+							<center>
+								<select class="easyui-combobox" label="报警类型" id="ALARM_TYPE" name="ALARM_TYPE" labelPostion="left" style="width:40%"></select><br /><br />
+								<select class="easyui-combobox" label="报警ID" id="ALARM_ID" name="ALARM_ID" labelPostion="left" style="width:40%" data-options="valueField:'ALARM_ID',textField:'ALARM_DESC'"></select><br /><br />
+								<div style="margin-top:24px">
+									<label style="margin: 0 auto;margin: 0 0 2% 0;display: block;">报警内容:</label>
 
-				                    <center>
-				                        <textarea name="ALARM_CONTENT" id="ALARM_CONTENT" cols="100" rows="8" maxlength="128"></textarea>
-				                    </center>
-				                </div>
-				                <div style="margin-top:24px;margin-bottom:48px;">
-				                    <a class="easyui-linkbutton" onclick="SaveAlarmData()">确认</a>
-				                    <a class="easyui-linkbutton" onclick="Refresh()">刷新</a>
-				                    <a class="easyui-linkbutton" onclick="ClearAlarmData()">取消</a>
-				                </div>
-				            </center>
-				        </form>
-				    </div>
-			    </div>
-	        </div>
-	    </div>
+									<center>
+										<textarea name="ALARM_CONTENT" id="ALARM_CONTENT" cols="100" rows="8" maxlength="128"></textarea>
+									</center>
+								</div>
+								<div style="margin-top:24px;margin-bottom:48px;">
+									<a class="easyui-linkbutton" onclick="SaveAlarmData()">确认</a>
+									<a class="easyui-linkbutton" onclick="Refresh()">刷新</a>
+									<a class="easyui-linkbutton" onclick="ClearAlarmData()">取消</a>
+								</div>
+							</center>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
 	</body>
 
 	<script src="../jquery-easyui-1.5.5.2/jquery.min.js"></script>
