@@ -232,14 +232,15 @@ label {
 	margin: auto;
 	display: block;
 }
-
+#pop .out-button{
+	left: 90%;
+}
 .error-modal{
 	width: 50%;
 	height: 40%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	
 }
 .error-modal > .content{
 	font-size: 1.75rem;
@@ -259,7 +260,6 @@ label {
 	background-color: #5D82DC;
 	color: #FFFFFF;
 	padding: 10px;
-	left: 90%;
 	bottom: 10px;
 }
 .login-bottom{
