@@ -107,16 +107,27 @@
 			input{
 				background-color: #1C2B50;
 			}
-			.datagrid-header td.datagrid-header-over{
-				
-			}
 			#bottom-input{
 				border-left: solid #324262 1px;
 			}
 			#bottom-input input{
-				border: solid #BEBEBE 1px ;
-				
+				border: solid #BEBEBE 1px ;	
 			}
+			.datagrid-header-row {
+	color: #FFFFFF !important;
+	letter-spacing: 1.4px !important;
+	text-align: center !important;
+	height: 3rem!important;
+}
+
+.datagrid-view,
+.datagrid-header,
+.datagrid-pager,
+.tool-box,
+.datagrid-td-rownumber {
+	background: #15213F !important;
+	color: #fff !important;
+}
 		</style>
 	</head>
 
@@ -188,6 +199,14 @@
 						                        <th field="USER_DESC" width="20%">用户</th>
 											</tr>
 					                    </thead>
+					                    <tbody>
+					                    	<tr>
+					                    		<td>1</td>
+					                    		<td>1</td>
+					                    		<td>1</td>
+					                    		<td>1</td>
+					                    	</tr>
+					                    </tbody>
 					                </table>
 					            </div>
 					        </div>
@@ -205,7 +224,17 @@
 										        <th field="USER_DESC" width="22%">物料位置</th>
 										        <th field="USER_DESC">物料条码</th>                
 											</tr>
-									    </thead>                
+									    </thead>
+									    <tbody>
+					                    	<tr>
+					                    		<td>1</td>
+					                    		<td>1</td>
+					                    		<td>1</td>
+					                    		<td>1</td>
+					                    		<td>1</td>
+					                    		<td>1</td>
+					                    	</tr>
+					                    </tbody>
 									</table>               	
 								</div>
 								<div region="east" class="p-search" style="width:40%;background-color:lightgray" title="EDC采集">
@@ -217,6 +246,13 @@
 										            <th field="CASE_NO" width="44%">确认操作</th>
 										        </tr>
 									    </thead>
+									    <tbody>
+									    	<tr>
+									    		<td>1</td>
+					                    		<td>1</td>
+					                    		<td>1</td>
+									    	</tr>
+									    </tbody>
 									</table>
 								</div>	            
 							</div>
@@ -224,7 +260,9 @@
 						<div data-options="region:'south'" style="height: 25%;">
 				            <div class="easyui-layout" fit="true">
 				                <div region="west" class="p-search" style="width:50%;" title="消息通知">
-				                    <table id="message" name="message"></table>
+				                    <table id="message" name="message">
+				                    	
+				                    </table>
 				                </div>
 				                <div region="east" id="bottom-input" class="p-search" style="width:50%;background-color:lightgray" title="操作">
 				                    <table align="left">
@@ -303,7 +341,7 @@
 				        </form>
 				    </div>
 				</div>
-				<div class="root-else" title="发生警报" style="">
+				<div class="root-else" title="发生警报" style="padding: 3% 20%;">
 				    <div class="easyui-panel" title="报警">
 				        <form id="alarm_form" method="post" style="padding-top:50px;">
 				            <center>

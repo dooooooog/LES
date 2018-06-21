@@ -21,6 +21,81 @@
 				line-height: 3rem !important;
 				font-size: 1.6rem !important;
 			}
+			.window {
+				background: #26407E !important;
+				border: none !important;
+				height: 50% !important;
+				width: 35% !important;
+			}
+			
+			.window-shadow {
+				height: 0 !important;
+				width: 0 !important;
+			}
+			
+			.panel-header {
+				border: none;
+				padding: 10px 0;
+			}
+			
+			.panel-title {
+				font-size: 1.5rem;
+				height: 3rem !important;
+				line-height: 3rem !important;
+			}
+			
+			#dd {
+				display: flex;
+				justify-content: center;
+				height: 100%;
+			}
+			
+			form {
+				width: 80% !important;
+				height: 80% !important;
+				display: flex !important;
+				flex-direction: column;
+				justify-content: space-around;
+				align-items: center;
+				color: #FFFFFF;
+			}
+			
+			.fitem{
+				font-size: 1.25rem;
+				width: 80%;
+				display: flex;
+				justify-content: space-between;
+				height: 10%;
+			}
+	
+			.fitem input {
+				background: #455E9B !important;
+				border: 1px solid #95B8E7;
+				color: #FFFFFF;
+				width: 60%;
+			}
+			
+			.combo-panel {
+				background: #FFFFFF !important;
+			}
+			select {
+				width: 15%;
+			}
+			#_easyui_textbox_input1,
+			#_easyui_textbox_input2 {
+				height: 100% !important;
+				width: 100% !important;
+				background: #455E9B !important;
+			}
+			
+			.textbox-addon,.combo-arrow {
+				height: 100% !important;
+			}
+			
+			.submit {
+				width: 30% !important;
+				background: #5D82DC !important;
+			}
 		</style>
 	</head>
 
@@ -44,14 +119,39 @@
 						<td>1</td>
 						<td>1</td>
 					</tr>
+					<tr></tr>
 				</tbody>
 			</table>
 		</div>
 		<div id="tool-box2" class="tool-box">
-			<a href="#" class="easyui-linkbutton" iconCls="icon-add" plain="true">添加</a>
+			<a href="#" class="easyui-linkbutton" iconCls="icon-add" plain="true" onclick="javascript:$('#dd').dialog('open')">添加</a>
 			<a href="#" class="easyui-linkbutton" iconCls="icon-edit" plain="true">编辑</a>
 			<a href="#" class="easyui-linkbutton" iconCls="icon-search" plain="true">查询</a>
 			<a href="#" class="easyui-linkbutton" iconCls="icon-remove" plain="true">删除</a>
+		</div>
+		<div id="dd" class="easyui-dialog" title="编 辑" data-options="resizable:true,modal:true,closed:true">
+			<form class="form">
+				<div class="fitem">
+					<label>I&nbsp;&nbsp;D:</label>
+					<input type="text" id="ID" name="ID" />
+				</div>
+				<div class="fitem">
+					<label>产线编号:</label>
+					<select class="easyui-combobox" id="LINEID" name="LINEID" editable="false"></select>
+				</div>
+				<div class="fitem">
+					<label>工站编号:</label>
+					<select class="easyui-combobox" id="STATIONID" name="STATIONID" editable="false"></select>
+				</div>
+				<div class="fitem">
+					<label>工序:</label>
+					<select class="easyui-combobox" id="STATIONID" name="STATIONID" editable="false"></select>
+				</div>
+				<div class="fitem">
+					<a href="#" class="easyui-linkbutton submit">确认</a>
+					<a href="#" class="easyui-linkbutton submit" onclick="javascript:$('#dd').dialog('close')">取消</a>
+				</div>
+			</form>
 		</div>
 	</body>
 

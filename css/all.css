@@ -28,7 +28,7 @@ div::-webkit-scrollbar-track {/*滚动条里面轨道*/
         background: #EDEDED;
 }
 .datagrid-cell span {
-	font-size: 1.75rem !important;
+	font-size: 1.5rem !important;
 }
 
 .datagrid-header-over,

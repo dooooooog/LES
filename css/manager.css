@@ -9,7 +9,7 @@
 	align-items: center;
 }
 .logo span {
-	font-size: 1.75rem;
+	font-size: 1.3rem;
 }
 .logo img {
 	width: 2vw;
@@ -68,8 +68,6 @@
 	color: #fff !important;
 }
 
-
-
 .line_state {
 	height:90%;
 	width: 90%;
@@ -93,7 +91,7 @@
 	margin-right: 2%;
 	box-shadow: 0 2px 12px 0 #1B2E5F;
 	border: none;
-	font-size: 2rem;
+	font-size: 1.5rem;
 	display: flex;
 	align-items: center;
 	cursor: pointer;
@@ -129,8 +127,6 @@
 }
 
 .tool-box a {
-	/*width: 5%;*/
-	/*width: 5rem;*/
 	margin-left: 1%;
 	display: flex;
 	justify-content: space-around;
