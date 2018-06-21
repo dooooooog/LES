@@ -4,9 +4,10 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<title>demo</title>
-		<link rel="stylesheet" href="../css/all.css" />
+		
 		<link rel="stylesheet" href="../jquery-easyui-1.5.5.2/themes/default/easyui.css" />
 		<link rel="stylesheet" href="../jquery-easyui-1.5.5.2/themes/icon.css" />
+		<link rel="stylesheet" href="../css/all.css" />
 		<style>
 			.easyui-layout {
 				background-image: url(../img/backImg.png);
@@ -25,6 +26,32 @@
 			#root-main div{
 				background-color: #15213F !important;
 				overflow-x: auto;
+			}
+			.root-else div{
+				background-color: #15213F !important;
+				overflow-x: auto;
+				color: #FFFFFF;
+			}
+			.root-else textarea , input{
+				background-color: #1C2B50;
+				color: #FFFFFF;
+			}
+			.root-else{
+				
+			}
+			.else-label{
+				display: flex;
+				justify-content: center;
+				padding: 1% 0;
+			}
+			.else-label span{
+				height: 2rem;
+			}
+			.else-button{
+				margin-top: 20px;
+			}
+			.l-btn{
+				height: 5rem;
 			}
 			.panel-body {
 				border: none ;
@@ -81,7 +108,7 @@
 				background-color: #1C2B50;
 			}
 			.datagrid-header td.datagrid-header-over{
-				color: #FFFFFF;
+				
 			}
 			#bottom-input{
 				border-left: solid #324262 1px;
@@ -142,7 +169,7 @@
 					                            </td>
 					                            <td>订单描述:</td>
 					                            <td >
-					                                <input class="easyui-textbox" type="text" id="ord_desc" name="ord_desc" data-options="" editable="false" style="width: 350px;" value=""></input>
+					                                <input class="easyui-textbox" type="text" id="ord_desc" name="ord_desc" data-options="" editable="false" style="" value=""></input>
 					                            </td>
 					                        </tr>
 					                    </table>
@@ -229,27 +256,75 @@
 				        </div>        
 					</div>
 				</div>
-	            <!--<div title="DataGrid" style="padding: 5px">
-	                <table class="easyui-datagrid"
-	                       data-options="url:'',method:'get',singleSelect:true,fit:true,fitColumns:true">
-	                    <thead>
-	                        <tr>
-	                            <th data-options="field:'itemid'" width="80">Item ID</th>
-	                            <th data-options="field:'productid'" width="100">Product ID</th>
-	                            <th data-options="field:'listprice',align:'right'" width="80">
-	                                List
-	                                Price
-	                            </th>
-	                            <th data-options="field:'unitcost',align:'right'" width="80">
-	                                Unit
-	                                Cost
-	                            </th>
-	                            <th data-options="field:'attr1'" width="150">Attribute</th>
-	                            <th data-options="field:'status',align:'center'" width="50">Status</th>
-	                        </tr>
-	                    </thead>
-	                </table>
-	            </div>-->
+	            <div class="root-else" title="物料查询" style="padding: 5px;width: 100%;">
+					<table id="dgecn" title="" class="easyui-datagrid"
+					        url="/WIP/ViewEcn"
+					        toolbar="#toolbar"
+					        rownumbers="false" fitColumns="false" singleSelect="false"  nowrap="false" data-options="fitColumns:false">
+				    	<thead>
+				       		<tr>
+				                <!-- 因数据库返回字段名称默认全大家且EASYUI框架区分大小写，所以参数都大写-->
+				                <th field="NO" width="5%">NO</th>
+				                <th field="SEQ_NUM" width="10%"> 物料序号</th>
+				                <th field="MAT_ID" width="10%">物料编号</th>
+				                <th field="MAT_VER" width="10%">物料版本</th>
+				                <th field="MAT_DESC" width="30%">物料描述</th>
+				                <th field="PART_GRP" width="10%">替换组编号</th>
+				                <th field="MAT_QTY" width="5%">数量</th>
+				                <th field="SERIAL_INPUT_FLAG" width="10%">是否需要采集</th>
+				                <th field="SERIAL_TYPE" width="10%">采集类型</th>
+				            </tr>
+				        </thead>
+					</table>
+				</div>
+				<div class="root-else" title="缺陷收集" style="padding: 3% 20%;">
+				    <div id="defect_collect" class="easyui-panel" title="缺陷收集">
+				        <form id="fm" method="post" style="margin-bottom:40px;padding-top: 2%;">
+				            <div class="else-label">
+				                <label>缺陷内容代码:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input id="DEFECT_CONTENT_CODE" name="DEFECT_CONTENT_CODE" type="text" class="easyui-textbox" /><br /><br />
+				            </div>
+				            <div class="else-label">
+				                <label>缺陷原因代码:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input id="DEFECT_REASON" name="DEFECT_REASON" type="text" class="easyui-textbox" /><br /><br />
+				            </div>
+				            <div id="rework">
+				                <center>
+				                    <label style=""> 返工类型：</label>
+				                    <label><input id="ONLINE" name="off_on" type="radio" value="0" />线上返工</label>
+				                    <label><input id="OFFLINE" name="off_on" type="radio" value="1" />线下返工</label>
+				                </center>
+				            </div>
+				            <div class="else-button">
+				                <center >
+				                    <a href="#" class="easyui-linkbutton" onclick="SaveDefect()">确认</a>
+				                    <a href="#" class="easyui-linkbutton" onclick="Refresh()">刷新</a>
+				                    <a href="#" class="easyui-linkbutton" onclick="ClearData()">取消</a>
+				                </center>
+				            </div>
+				        </form>
+				    </div>
+				</div>
+				<div class="root-else" title="发生警报" style="">
+				    <div class="easyui-panel" title="报警">
+				        <form id="alarm_form" method="post" style="padding-top:50px;">
+				            <center>
+				                <select class="easyui-combobox" label="报警类型" id="ALARM_TYPE" name="ALARM_TYPE" labelPostion="left" style="width:40%"></select><br /><br />
+				                <select class="easyui-combobox" label="报警ID" id="ALARM_ID" name="ALARM_ID" labelPostion="left" style="width:40%" data-options="valueField:'ALARM_ID',textField:'ALARM_DESC'"></select><br /><br />
+				                <div style="margin-top:24px">
+				                    <label style="margin: 0 auto;margin: 0 0 2% 0;display: block;">报警内容:</label>
+
+				                    <center>
+				                        <textarea name="ALARM_CONTENT" id="ALARM_CONTENT" cols="100" rows="8" maxlength="128"></textarea>
+				                    </center>
+				                </div>
+				                <div style="margin-top:24px;margin-bottom:48px;">
+				                    <a class="easyui-linkbutton" onclick="SaveAlarmData()">确认</a>
+				                    <a class="easyui-linkbutton" onclick="Refresh()">刷新</a>
+				                    <a class="easyui-linkbutton" onclick="ClearAlarmData()">取消</a>
+				                </div>
+				            </center>
+				        </form>
+				    </div>
+			    </div>
 	        </div>
 	    </div>
 	</body>
