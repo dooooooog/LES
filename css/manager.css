@@ -78,7 +78,8 @@
 }
 
 .line-row {
-	margin-left: 2%;
+	margin-top: -2%;
+	margin-left: .5%;
 	flex: 1;
 	display: flex;
 	justify-content: flex-start;
@@ -88,14 +89,28 @@
 .line-row button {
 	height: 80%;
 	width: 18%;
-	margin-right: 2%;
-	box-shadow: 0 2px 12px 0 #1B2E5F;
+	margin-right: .5%;
 	border: none;
 	font-size: 1.5rem;
 	display: flex;
 	align-items: center;
 	cursor: pointer;
 	color: #FFFFFF;
+}
+
+.line-row button:hover{
+	box-shadow: 0 2px 12px 0 #FFFFFF;
+}
+
+.line-row button:active{
+	background: #FFFFFF !important;
+	color: #000000;
+	font-weight: 700;
+}
+.line-row button:focus{
+	font-weight: 700;
+	color: #000000;
+	box-shadow: 0 2px 12px 0 #FFFFFF;
 }
 
 .line-row img {
