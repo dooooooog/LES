@@ -9,27 +9,11 @@
 		<link rel="stylesheet" href="../jquery-easyui-1.5.5.2/themes/icon.css" />
 		<link rel="stylesheet" href="../css/index.css" />
 		<link rel="stylesheet" href="../css/all.css" />
+
 	</head>
 
 	<body class="easyui-layout" id="root-index">
 		<div data-options="region:'north'" class="goods-login">
-			<form style="width: 50%;">
-				<table>
-					<tr>
-						<td width="12%" style="text-align:left"><span>当前产线：</span></td>
-						<td width="12%" style="text-align:left"><span>当前工位：</span></td>
-						<td width="12%" style="text-align:left"><span>登录用户：</span></td>
-						<td width="5%" style="text-align:center">
-							<img src="../img/头像.png" /><br/>注销
-						</td>
-						<td width="5%" style="text-align:center">
-							<img id="fullscreen" src="../img/放大.png" /><br/>放大
-							<td width="5%" style="text-align:center">
-								<img src="../img/缩小.png" /><br/>缩小
-							</td>
-					</tr>
-				</table>
-			</form>
 		</div>
 		<div data-options="region:'center'">
 			<div class="easyui-tabs" data-options="fit:true,border:false,plain:true">
@@ -230,7 +214,7 @@
 						</tbody>
 					</table>
 				</div>
-				<div class="root-else" title="缺陷收集" style="padding: 3% 20%;">
+				<div class="root-else1" title="缺陷收集" style="padding: 3% 20%;">
 					<div id="defect_collect" class="easyui-panel" title="缺陷收集" style="border: 1px solid #95B8E7;border-top: 0;">
 						<form id="fm" method="post" style="margin-bottom:40px;padding-top: 2%;">
 							<div class="else-label">
@@ -256,7 +240,7 @@
 						</form>
 					</div>
 				</div>
-				<div class="root-else" title="发生警报" style="padding: 3% 20%;">
+				<div class="root-else1" title="发生警报" style="padding: 3% 20%;">
 					<div class="easyui-panel" title="报警" style="border: 1px solid #95B8E7;border-top: 0;">
 						<form id="alarm_form" method="post" style="padding-top:50px;">
 							<center>
@@ -269,7 +253,7 @@
 										<textarea name="ALARM_CONTENT" id="ALARM_CONTENT" cols="100" rows="8" maxlength="128"></textarea>
 									</center>
 								</div>
-								<div style="margin-top:24px;margin-bottom:48px;">
+								<div class="else-button" style="margin-bottom:48px;">
 									<a href="#" class="easyui-linkbutton" iconCls="font-ok" onclick="SaveDefect()">确认</a>
 									<a href="#" class="easyui-linkbutton" iconCls="font-reply" onclick="Refresh()">刷新</a>
 									<a href="#" class="easyui-linkbutton" iconCls="font-cancel" onclick="ClearData()">取消</a>
