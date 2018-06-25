@@ -4,12 +4,12 @@
 	<head>
 		<meta charset="UTF-8">
 		<link rel="stylesheet" type="text/css" href="../../Scripts/easyui/themes/default/easyui.css">
-		<link href="../../Scripts/easyui/themes/icon.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../../Scripts/easyui/themes/icon.css" />
 		<link rel="stylesheet" href="../../Scripts/easyui/demo/demo.css" />
-		<link rel="stylesheet" href="../../Css/login.css" />
-		<link rel="stylesheet" href="../../Css/all.css" />
-		<script src="../../Scripts/jquery.min.js"></script>
-		<script src="../../Scripts/jquery.easyui.min.js"></script>
+		<link rel="stylesheet" href="../../css/login.css" />
+		<link rel="stylesheet" href="../../css/all.css" />
+		<script type="text/javascript" src="../../Scripts/jquery.min.js"></script>
+		<script type="text/javascript" src="../../Scripts/jquery.easyui.min.js"></script>
 		<title>用户登录</title>
 		<script>
 			window.onload = function() {
@@ -27,7 +27,7 @@
 					<h3>欢迎登陆</h3>
 					<a class="qrCode" href="#pop"></a>
 				</div>
-
+			
 				<div class="form-container">
 					<form method="post">
 						<div class="page-container">
@@ -50,41 +50,40 @@
 							<input type="text " id="USERID " name="USERID " class="easyui-input ">	
 						</div>
 						<p class="info ">如有疑问，请点击右上角二维码</p>
-						<a id="ll " class="easyui-linkbutton " href="#error ">登&nbsp;&nbsp;&nbsp;录</a>
+						<a id="ll " class="easyui-linkbutton " href="#error">登&nbsp;&nbsp;&nbsp;录</a>
 					</form>
 				</div>
 				
-				<div id="pop " class="overlay ">
-					<div class="modal ">
-						<div class="content ">
-							<div class="qr-box ">
-								<img src="../../images/IT运维故障.png " / style="width: 40%; ">
+				<div id="pop" class="overlay">
+					<div class="modal">
+						<div class="content">
+							<div class="qr-box">
+								<img src="../../images/IT运维故障.png" / style="width: 40%;">
 								<p>IT运维故障</p>
 							</div>
-							<div class="qr-box ">
-								<img src="../../images/MES故障处理.png " style="width: 40%; "/>
+							<div class="qr-box">
+								<img src="../../images/MES故障处理.png " style="width: 40%;"/>
 								<p>MES故障处理</p>
 							</div>
 						</div>
-						<a class="out-button " href="# ">关闭</a>
+						<a class="out-button " href="#">关闭</a>
 					</div>
 				</div>
-				<div id="error " class="overlay ">
-					<div class="modal error-modal ">
-						<div class="content ">
+				<div id="error" class="overlay">
+					<div class="modal error-modal">
+						<div class="content">
 							登录信息有误
 						</div>
-						<a class="out-button " href="# ">关闭</a>
+						<a class="out-button " href="#">关闭</a>
 					</div>
 				</div>
 				
 			</div>
 		</div>
-		<div data-options="region: 'south' " class="login-bottom ">
-			<a class="bottom-a ">版权所有</a>
-			<a class="bottom-a ">备案信息</a>
+		<div data-options="region: 'south' " class="login-bottom">
+			<a class="bottom-a">版权所有</a>
+			<a class="bottom-a">备案信息</a>
         </div>
 
 	</body>
-	<script></script>
 </html>

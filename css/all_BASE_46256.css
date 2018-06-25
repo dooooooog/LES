@@ -1,0 +1,62 @@
+html, body, div, p, section, article, h1, h2, h3 {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+html, body, #__next, .index ,b{
+	height: 100%;
+	font-family: '微软雅黑', 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB',
+		'Microsoft YaHei',  'WenQuanYi Micro Hei', Arial, sans-serif !important;
+	font-size: 12px !important;
+}
+div::-webkit-scrollbar {/*滚动条整体样式*/
+        width: 5px;     /*高宽分别对应横竖滚动条的尺寸*/
+        height: 5px;
+    }
+div::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+        border-radius: 10px;
+         -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+        background: #5D82DC;
+    }
+div::-webkit-scrollbar-track {/*滚动条里面轨道*/
+        -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+        border-radius: 10px;
+        background: #EDEDED;
+}
+.datagrid-cell span {
+	font-size: 1.5rem !important;
+}
+
+.datagrid-header-over,
+.datagrid-row-over {
+	background: #1C2B50 !important;
+	color: #FFFFFF !important;
+}
+
+.datagrid-header td {
+	border-style: solid !important;
+	border-color: #334464 !important;
+	border-width: 0 1px 1px 0;
+}
+
+.datagrid-body td {
+	border-style: solid !important;
+	border-color: #334464 !important;
+	border-width: 0 1px 1px 0;
+	color: #FFFFFF !important;
+	height: 2.5rem !important;
+}
+
+.datagrid-cell-rownumber {
+	color: #FFFFFF !important;
+}
+
+.datagrid-row-selected {
+	background: #5D82DC !important;
+	box-shadow: 0 0 5px 0 #1C2B50;
+	color: #FFFFFF !important;
+}
