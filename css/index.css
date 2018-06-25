@@ -1,5 +1,5 @@
 .easyui-layout {
-	background-image: url(../img/backImg.png);
+	background-image: url(../images/backImg.png);
 	background-repeat: no-repeat;
 }
 
@@ -97,7 +97,7 @@ input {
 
 .goods-login {
 	background-color: #273963 !important;
-	background-image: url(../img/topImg-white.png);
+	background-image: url(../images/topImg-white.png);
 	background-repeat: no-repeat;
 	display: flex;
 	justify-content: flex-end;

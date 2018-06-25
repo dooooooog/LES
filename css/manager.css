@@ -1,6 +1,6 @@
 .logo {
 	background-color: #273963;
-	background-image: url(../img/topImg-white.png);
+	background-image: url(../images/topImg-white.png);
 	background-repeat: no-repeat;
 	background-size: 40% 100%;
 	color: #FFFFFF !important;
@@ -20,7 +20,7 @@
 	width: 100%;
 }
 .easyui-layout {
-	background-image: url(../img/backImg.png);
+	background-image: url(../images/backImg.png);
 	background-repeat: no-repeat;
 }
 
@@ -155,25 +155,25 @@
 }
 
 .icon-add {
-	background: url(../img/添加.png) !important;
+	background: url(../images/添加.png) !important;
 	background-position: center center !important;
 	background-size: cover !important;
 }
 
 .icon-edit {
-	background: url(../img/编辑.png) !important;
+	background: url(../images/编辑.png) !important;
 	background-position: center center !important;
 	background-size: cover !important;
 }
 
 .icon-search {
-	background: url(../img/查询.png) !important;
+	background: url(../images/查询.png) !important;
 	background-position: center center !important;
 	background-size: cover !important;
 }
 
 .icon-remove {
-	background: url(../img/删除.png) !important;
+	background: url(../images/删除.png) !important;
 	background-position: center center !important;
 	background-size: cover !important;
 }

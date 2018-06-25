@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="../../Scripts/easyui/themes/default/easyui.css">
+		<link href="../../Scripts/easyui/themes/icon.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../../Scripts/easyui/demo/demo.css" />
+		<link rel="stylesheet" href="../../Css/login.css" />
+		<link rel="stylesheet" href="../../Css/all.css" />
+		<script src="../../Scripts/jquery.min.js"></script>
+		<script src="../../Scripts/jquery.easyui.min.js"></script>
+		<title>用户登录</title>
+		<script>
+			window.onload = function() {
+				$('#LINEID').combobox('select', 'M1');
+			}
+		</script>
+	</head>
+
+	<body class="easyui-layout">
+		<div data-options="region:'north'" class="logo">
+		</div>
+		<div data-options="region:'center'" class="login-center">
+			<div class="login-panel">
+				<div class="title-bg">
+					<h3>欢迎登陆</h3>
+					<a class="qrCode" href="#pop"></a>
+				</div>
+
+				<div class="form-container">
+					<form method="post">
+						<div class="page-container">
+							<label>产线编号 :</label>
+							<select class="easyui-combobox" id="LINEID" name="LINEID" editable="false"></select>
+						</div>
+						<div class="page-container">
+							<label>登陆方式 :</label>
+							<select class="easyui-combobox" id="LOGINTYPE" name="LOGINTYPE" editable="false" ">
+								<option value="1 ">产线操作人员</option>
+								<option value="2 ">产线管理人员</option>
+							</select>
+					 	</div>	 		
+				        <div class="page-container ">
+							<label>工站编号 :</label> 
+							<input type="text " id="STATIONID " name="STATIONID " class="easyui-input ">
+						</div>
+						<div class="page-container ">
+							<label>用户编号 :</label> 
+							<input type="text " id="USERID " name="USERID " class="easyui-input ">	
+						</div>
+						<p class="info ">如有疑问，请点击右上角二维码</p>
+						<a id="ll " class="easyui-linkbutton " href="#error ">登&nbsp;&nbsp;&nbsp;录</a>
+					</form>
+				</div>
+				
+				<div id="pop " class="overlay ">
+					<div class="modal ">
+						<div class="content ">
+							<div class="qr-box ">
+								<img src="../../images/IT运维故障.png " / style="width: 40%; ">
+								<p>IT运维故障</p>
+							</div>
+							<div class="qr-box ">
+								<img src="../../images/MES故障处理.png " style="width: 40%; "/>
+								<p>MES故障处理</p>
+							</div>
+						</div>
+						<a class="out-button " href="# ">关闭</a>
+					</div>
+				</div>
+				<div id="error " class="overlay ">
+					<div class="modal error-modal ">
+						<div class="content ">
+							登录信息有误
+						</div>
+						<a class="out-button " href="# ">关闭</a>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<div data-options="region: 'south' " class="login-bottom ">
+			<a class="bottom-a ">版权所有</a>
+			<a class="bottom-a ">备案信息</a>
+        </div>
+
+	</body>
+	<script></script>
+</html>

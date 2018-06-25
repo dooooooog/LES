@@ -20,7 +20,7 @@ a {
 }
 
 .logo {
-	background-image: url(../img/topImg-black.png);
+	background-image: url(../images/topImg-black.png);
 	background-repeat: no-repeat;
 	background-size: 40% 100%;
 	border: none !important;
@@ -35,7 +35,7 @@ a {
 	display: flex;
 	flex-direction: row-reverse;
 	align-items: center;
-	background: url(../img/car.jpg) no-repeat;
+	background: url(../images/car.jpg) no-repeat;
 	background-size: 80%;
 	background-position: 100% 0;
 	background-size: cover;
@@ -57,7 +57,7 @@ a {
 	right: 0;
 	width: 12%;
 	height: 12%;
-	background: url(../img/IT运维故障.png) no-repeat ;
+	background: url(../images/IT运维故障.png) no-repeat ;
 	background-size:100% ;
 	/*border-bottom-left-radius: 100%;*/
 }
